@@ -41,13 +41,37 @@
         QRScannerCodeView: (二维码扫描的工具类)
         
         Skin:(皮肤工具类)
-        
+      
         SoundAndMusic:(播放本地音效音乐)
         
         UIBarButtonItem:(封装的BarButtonItem结合CommonViewController才可以使用)
         
         ViewController:(常用的获取Controller和UITabBarcontroller和UINavigationController才可以使用否则会闪退)
       
+    Resources:
+      
+      SkinFile的switch_night一定要创建引用才可以不然的话皮肤无效
+      
+    Manager:
+      
+      HttpRquest:(网络请求的封装（AFNetworking）)
+      
+      Location:(定位基于系统)
+    
+      
+    UI:
+      
+      NormalTabBarUI: (利用系统的UITabBar,和UINavigation搭建的界面)只需要在UIPropertyCOnfig.plist 配置TabBarUi即可
+      
+      CustomTabUI:(待完成)
+      
+      NormalDrawerUI:(待完成)
+      
+Demo:
+  
+  测试Demo
+  
+  详解请继续关注
       
       
         
