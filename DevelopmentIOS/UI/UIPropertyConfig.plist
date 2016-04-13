@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>GlobalUITheme</key>
+	<string>200,70,100,1.0</string>
+	<key>TabBarUi</key>
+	<array>
+		<dict>
+			<key>controller</key>
+			<string>LSFirstViewController</string>
+			<key>normalImage</key>
+			<string></string>
+			<key>selectImage</key>
+			<string></string>
+			<key>title</key>
+			<string>首页</string>
+		</dict>
+		<dict>
+			<key>controller</key>
+			<string>LSSecondViewController</string>
+			<key>normalImage</key>
+			<string></string>
+			<key>selectImage</key>
+			<string></string>
+			<key>title</key>
+			<string>第二</string>
+		</dict>
+	</array>
+</dict>
+</plist>

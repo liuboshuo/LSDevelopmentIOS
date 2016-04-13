@@ -1,0 +1,17 @@
+/* 
+ SkinAllColor.strings
+ LSDevelopmentIOS
+ 
+ Created by 刘硕 on 16/4/12.
+ Copyright © 2016年 liushuo. All rights reserved.
+ */
+
+"Nav_bg_Color" = "100,70,200,1.0";
+"Nav_title_Color" = "20,30,50,1.0";
+
+"Page_color" = "60,90,255,1.0";
+"Tab_title_Color" = "20,30,50,1.0";
+"Btn_bg_Color" = "200,200,100,1.0";
+
+"Btn_text_Color" = "130,140,250,1.0";
+
