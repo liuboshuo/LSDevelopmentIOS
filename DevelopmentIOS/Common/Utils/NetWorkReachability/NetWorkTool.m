@@ -11,8 +11,6 @@
 #import "UIPropertyConstant.h"
 @interface NetWorkTool ()
 
-@property(nonatomic , strong)LSReachability *reachability;
-
 @end
 
 @implementation NetWorkTool

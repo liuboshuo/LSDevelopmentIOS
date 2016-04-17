@@ -10,9 +10,11 @@
 #ifndef Manager_h
 #define Manager_h
 
-//#import "NetWorkManager.h"
+#import "NetWorkManager.h"
 #import "ReverseGeocodeLocation.h"
 #import "ManagerPropertyConstant.h"
-
+#import "MultiDownloadFile.h"
+#import "SingleDownLoadFile.h"
+#import "CopyFile.h"
 
 #endif /* Manager_h */

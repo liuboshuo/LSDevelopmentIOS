@@ -8,9 +8,16 @@
 
 #import <Foundation/Foundation.h>
 #import "SingletonTemplate.h"
+#import "LSReachability.h"
 @interface NetWorkTool : NSObject
 
+
+
 singletonInterface(NetWorkTool);
+
+
+@property(nonatomic , strong)LSReachability *reachability;
+
 
 /**
  *  检测网络的当前状态

@@ -69,8 +69,9 @@
         alertViewTitleLabel.font = [UIFont boldSystemFontOfSize:20];
         
         UIImageView *imageView = [[UIImageView alloc] init];
-        imageView.contentMode = UIViewContentModeCenter;
+        imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self.containerView addSubview:imageView];
+        imageView.clipsToBounds = YES;
         self.imageView = imageView;
         UILabel *textLabel = [[UILabel alloc] init];
         textLabel.textColor = [UIColor blackColor];
@@ -179,7 +180,7 @@
         self.imageView.frame = CGRectMake(imageViewX, imageViewY, imageViewW, imageViewH);
         self.imageView.image = [UIImage imageNamed:self.imageURL];
         
-        imageViewMaxY = self.imageView.bottomY + padding;
+        imageViewMaxY = self.imageView.bottomY + 2 * padding;
     }
     
     

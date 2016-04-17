@@ -10,7 +10,7 @@
 #import "AFNetworking.h"
 #import "AFNetworkActivityIndicatorManager.h"
 #import "AFHTTPSessionManager.h"
-
+#import "LSDevelopmetIOS.h"
 static NSString *_privateNetWorkBaseUrl = nil;
 static BOOL _shouldAutoEncode = NO;
 static NSDictionary *_httpHeader = nil;
@@ -357,7 +357,13 @@ singletonImplementation(LSNetWorkManager);
     AFHTTPSessionManager *mgr = [self manager];
     LSURLSessionTask *session = [mgr POST:url parameters:parameters constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
-        NSData *imageData = UIImageJPEGRepresentation(image, 1);
+        NSData *imageData;
+        
+        if ([mimeType containsString:@"png"]) {
+            imageData = UIImagePNGRepresentation(image);
+        }else{
+            imageData = UIImageJPEGRepresentation(image, 1);
+        }
         
         NSString *imageFileName = filename;
         

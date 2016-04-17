@@ -22,7 +22,7 @@ singletonInterface(ReverseGeocodeLocation);
 /**
  *  定位的block返回地址坐标和座城市名
  */
-@property(nonatomic , assign)locationCurrentCity locationCurrentCityBlock;
+@property(nonatomic , copy)locationCurrentCity locationCurrentCityBlock;
 
 /**
  *  获取当前位置

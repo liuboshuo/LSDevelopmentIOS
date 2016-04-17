@@ -23,7 +23,7 @@ singletonImplementation(ReverseGeocodeLocation);
         
 #endif
     };
-    self.locationCurrentCityBlock = locationCurrentCity;
+    self.locationCurrentCityBlock = [locationCurrentCity copy];
     //定位
     self.locationMgr = [LocationManager sharedLocationManager];
     [self.locationMgr getLocation:locationBlock];

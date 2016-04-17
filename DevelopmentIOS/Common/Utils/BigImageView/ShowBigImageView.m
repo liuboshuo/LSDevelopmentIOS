@@ -48,6 +48,7 @@
         _maxScale = 1.5;
         //点击大图时，不作任何事情
         self.imageView.userInteractionEnabled = YES;
+        self.imageView.contentMode = UIViewContentModeScaleAspectFill;
         [self addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(click)]];
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(click1)];
@@ -92,7 +93,7 @@
                         self.imageView.height = image.size.height;
                     }
                 }else{
-                    self.imageView.width = UIScreenHeight;
+                    self.imageView.width = UIScreenWidth;
                     self.imageView.height = image.size.height * UIScreenWidth / image.size.width ;
                 }
                 self.alpha = 1;

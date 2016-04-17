@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -16,7 +16,7 @@
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FBc-EH-uye">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="scJ-19-oNG"/>
                             </constraints>
@@ -39,7 +39,6 @@
                         </button>
                         <view alpha="0.40000000000000002" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="liu-Tw-LOz">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="0XT-o1-FAI"/>
@@ -57,7 +56,7 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="osH-vp-iin">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="qdA-yW-oyt"/>
                             </constraints>
@@ -80,7 +79,6 @@
                         </button>
                         <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WPd-0Z-68w">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="wb8-TF-aLc"/>
@@ -98,7 +96,7 @@
                         </view>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhw-8R-mPi">
                             <rect key="frame" x="-23" y="-15" width="46" height="30"/>
-                            <animations/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="45" id="6k5-wd-vaC"/>
                             </constraints>
@@ -121,7 +119,6 @@
                         </button>
                         <view alpha="0.40000000596046448" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CTA-g7-50g">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            <animations/>
                             <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="1" id="1SK-2P-zyk"/>
@@ -139,7 +136,6 @@
                         </view>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="KYl-HO-djn">
                             <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                            <animations/>
                             <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="hGE-Ij-aP5">
                                 <size key="itemSize" width="50" height="50"/>
                                 <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -152,8 +148,7 @@
                             </connections>
                         </collectionView>
                     </subviews>
-                    <animations/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstItem="KYl-HO-djn" firstAttribute="top" secondItem="HdS-u6-pQg" secondAttribute="top" constant="3" id="1lD-Tm-O5X"/>
                         <constraint firstAttribute="bottom" secondItem="FBc-EH-uye" secondAttribute="bottom" id="3Ml-jh-oYm"/>
@@ -255,7 +250,6 @@
                     </variation>
                 </view>
             </subviews>
-            <animations/>
             <color key="backgroundColor" white="0.66666666666666663" alpha="0.14999999999999999" colorSpace="calibratedWhite"/>
             <constraints>
                 <constraint firstItem="HdS-u6-pQg" firstAttribute="leading" secondItem="uFx-aZ-mnT" secondAttribute="leading" id="NfY-nf-PT9"/>
@@ -287,7 +281,7 @@
                 <outlet property="btnCamera" destination="Nhw-8R-mPi" id="xKG-qa-xiU"/>
                 <outlet property="collectionView" destination="KYl-HO-djn" id="zhm-al-rfV"/>
             </connections>
-            <point key="canvasLocation" x="172" y="368"/>
+            <point key="canvasLocation" x="14" y="346"/>
         </view>
     </objects>
 </document>

@@ -155,8 +155,8 @@
     if (self.DoneBlock) {
         self.DoneBlock(self.arraySelectPhotos);
     }
-    [self.navigationController.view.layer addAnimation:[ZLAnimationTool animateWithType:kCATransitionMoveIn subType:kCATransitionFromBottom duration:0.3] forKey:nil];
-    [self.navigationController popToRootViewControllerAnimated:NO];
+    //    [self.navigationController.view.layer addAnimation:[ZLAnimationTool animateWithType:kCATransitionMoveIn subType:kCATransitionFromBottom duration:0.3] forKey:nil];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 - (void)navLeftBtn_Click
@@ -170,8 +170,8 @@
     if (self.CancelBlock) {
         self.CancelBlock();
     }
-    [self.navigationController.view.layer addAnimation:[ZLAnimationTool animateWithType:kCATransitionMoveIn subType:kCATransitionFromBottom duration:0.3] forKey:nil];
-    [self.navigationController popToRootViewControllerAnimated:NO];
+    //    [self.navigationController.view.layer addAnimation:[ZLAnimationTool animateWithType:kCATransitionMoveIn subType:kCATransitionFromBottom duration:0.3] forKey:nil];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 #pragma mark - UICollectionViewDataSource

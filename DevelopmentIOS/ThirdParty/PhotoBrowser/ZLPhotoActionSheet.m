@@ -26,6 +26,7 @@ typedef void (^handler)(NSArray<UIImage *> *selectPhotos);
 @property (nonatomic, strong) NSMutableArray<PHAsset *> *arrayDataSources;
 @property (nonatomic, strong) NSMutableArray<ZLSelectPhotoModel *> *arraySelectPhotos;
 @property (nonatomic, copy) handler handler;
+@property (weak, nonatomic) IBOutlet UIView *containerViews;
 
 @end
 
@@ -98,6 +99,15 @@ typedef void (^handler)(NSArray<UIImage *> *selectPhotos);
         return NO;
     }
     return YES;
+}
+
+
+-(void)setMaxPreviewCount:(NSInteger)maxPreviewCount
+{
+    _maxPreviewCount = maxPreviewCount;
+    if (_maxPreviewCount <= 0) {
+        _collectionView.backgroundColor = [UIColor clearColor];
+    }
 }
 
 - (void)showAlertWithTitle:(NSString *)title message:(NSString *)message
@@ -207,6 +217,7 @@ typedef void (^handler)(NSArray<UIImage *> *selectPhotos);
         _animate = NO;
         
         ZLPhotoBrowser *photoBrowser = [[ZLPhotoBrowser alloc] initWithStyle:UITableViewStylePlain];
+        UINavigationController *photoBrowserNavigationViewController = [[UINavigationController alloc] initWithRootViewController:photoBrowser];
         photoBrowser.maxSelectCount = self.maxSelectCount;
         photoBrowser.arraySelectPhotos = _arraySelectPhotos.mutableCopy;
         
@@ -222,7 +233,8 @@ typedef void (^handler)(NSArray<UIImage *> *selectPhotos);
         }];
         
         [self.sender.navigationController.view.layer addAnimation:[ZLAnimationTool animateWithType:kCATransitionMoveIn subType:kCATransitionFromTop duration:0.25] forKey:nil];
-        [self.sender.navigationController pushViewController:photoBrowser animated:NO];
+        [self.sender.navigationController presentViewController:photoBrowserNavigationViewController animated:YES completion:nil];
+        //pushViewController:photoBrowser animated:NO];
     }
 }
 

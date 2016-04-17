@@ -13,6 +13,10 @@
  */
 @interface OrderedDictionaryOC : NSObject
 
+
+-(instancetype)init UNAVAILABLE_ATTRIBUTE;
++(instancetype)new UNAVAILABLE_ATTRIBUTE;
+
 @property(nonatomic , strong)NSMutableArray *keysArr;
 
 @property(nonatomic , strong)NSMutableDictionary *valuesDictionary;
@@ -23,26 +27,32 @@
 /**
  *  获取index的value
  *
- *  @param index <#index description#>
+ *  @param index 索引
  *
- *  @return <#return value description#>
+ *  @return 返回value
  */
--(NSArray *)valueWithIndex:(NSInteger)index;\
+-(NSArray *)valueWithIndex:(NSInteger)index;
 /**
  *  插入value
  *
- *  @param value <#value description#>
- *  @param key   <#key description#>
- *  @param index <#index description#>
+ *  @param value NSArray
+ *  @param key   key
+ *  @param index 索引
  */
 -(void)insertWithValue:(id)value key:(id)key index:(int)index;
 
 /**
- *  移除index的值
+ *  移除下标index的所有值
  *
- *  @param index <#index description#>
+ *  @param index 无
  */
 -(void)removeWithIndex:(int)index;
+
+/**
+ *  插入单个数值即 valuesDictionary的value数组的单个对象
+ *
+ */
+-(void)inserValue:(id)value;
 
 
 @end

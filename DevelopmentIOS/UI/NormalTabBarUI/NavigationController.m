@@ -84,10 +84,10 @@
     [self.navigationBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
     self.navigationBar.tintColor = [LSSkinMananger colorNamed:@"Nav_title_Color"];
     if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
-        [UINavigationBar appearance].translucent = NO;
-        [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
+        self.navigationBar.translucent = NO;
+        [self.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     }
-    [UINavigationBar appearance].barStyle = UIBarStyleBlack;
-    [UINavigationBar appearance].shadowImage = [[UIImage alloc] init];
+    self.navigationBar.barStyle = UIBarStyleBlack;
+    self.navigationBar.shadowImage = [[UIImage alloc] init];
 }
 @end

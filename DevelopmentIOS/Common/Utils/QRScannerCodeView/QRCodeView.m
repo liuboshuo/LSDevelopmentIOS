@@ -145,8 +145,11 @@ static const CGFloat kMargin = 30;
              *  处理错误
              */
             
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"相机不可用" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
-            [alert show];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                
+                UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"提示" message:@"相机不可用" delegate:nil cancelButtonTitle:@"确定" otherButtonTitles:nil, nil];
+                [alert show];
+            });
             return;
         }
         AVCaptureMetadataOutput *output = [[AVCaptureMetadataOutput alloc] init];
@@ -176,7 +179,7 @@ static const CGFloat kMargin = 30;
             preview.frame = self.layer.bounds;
             [self.layer insertSublayer:preview atIndex:0];
             [_session startRunning];
-            
+            [self resumeAnimation];
             [UIView animateWithDuration:1 animations:^{
                 
             }];

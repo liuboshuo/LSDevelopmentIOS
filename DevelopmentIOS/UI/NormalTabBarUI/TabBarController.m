@@ -30,7 +30,7 @@
     [super viewDidLoad];
     
     
-    //    [NotificationCenter addObserver:self selector:@selector(refreshCurrentSkin:) name:LSNotificationRefreshAllSkin object:nil];
+    [NotificationCenter addObserver:self selector:@selector(refreshCurrentSkin:) name:LSNotificationRefreshAllSkin object:nil];
     
     [self initViewController];
     
@@ -118,6 +118,6 @@
 -(void)setSkin
 {
     //    [self.tabBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
-    //    self.tabBar.tintColor = [LSSkinMananger colorNamed:@"Tab_title_Color"];
+    self.tabBar.tintColor = [LSSkinMananger colorNamed:@"Tab_title_Color"];
 }
 @end

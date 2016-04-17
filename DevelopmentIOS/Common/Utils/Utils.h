@@ -11,6 +11,7 @@
 #define Utils_h
 
 #import "AudioTool.h"
+#import "SWTableViewCell.h"
 #import "AlbumCameraTool.h"
 #import "LSAlertViewTools.h"
 #import "MyMD5.h"
@@ -30,6 +31,10 @@
 #import "YYWeakProxy.h"
 #import "LSDispatchQueuePool.h"
 #import "LSSkinMananger.h"
+#import "Toast.h"
+#import "LSProgressView.h"
+#import "LSInfiniteScrollView.h"
 #import "LSProjectUtils.h"
+
 
 #endif /* Utils_h */

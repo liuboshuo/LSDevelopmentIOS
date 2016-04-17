@@ -35,6 +35,10 @@
 
 @property(nonatomic , assign)id<AlbumCameraToolSelectImageDelegate> delegate;
 
+
+-(id)initWithVc:(UIViewController *)vc;
+
+
 /**
  *  弹出选择框
  */

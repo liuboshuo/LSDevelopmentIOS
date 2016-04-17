@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "LSDevelopmetIOS.h"
-
+#import "RootViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +22,11 @@
     
     [[LSSkinMananger sharedLSSkinMananger] initSkinSetting];
     
-    TabBarController *tab = [[TabBarController alloc] init];
+    //    TabBarController *tab = [[TabBarController alloc] init];
+    
+    
+    RootViewController *rootViweController = [[RootViewController alloc] init];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViweController];
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     CGFloat scrrenH = [UIScreen mainScreen].bounds.size.height;
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, screenW, scrrenH)];
@@ -30,7 +34,7 @@
     
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = tab;
+    self.window.rootViewController = nav;
     
     
     

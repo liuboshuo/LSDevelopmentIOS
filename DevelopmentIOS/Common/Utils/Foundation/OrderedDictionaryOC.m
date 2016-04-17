@@ -9,12 +9,28 @@
 #import "OrderedDictionaryOC.h"
 #import <UIKit/UIKit.h>
 
+@interface OrderedDictionaryOC ()
+
+@property(nonatomic , assign)SEL selector;
+
+
+@property(nonatomic , strong)NSMutableArray *values;
+
+
+@end
+
 @implementation OrderedDictionaryOC
 
 
 -(instancetype)initWithKeys:(NSArray *)objects sel:(SEL)selector
 {
     if (self = [super init]) {
+        
+        _selector = selector;
+        
+        _values = objects;
+        
+        
         UILocalizedIndexedCollation *index = [UILocalizedIndexedCollation currentCollation];
         NSArray *titles = [index sectionTitles];
         self.keysArr = [NSMutableArray array];
@@ -39,7 +55,17 @@
         
         for (int i = 0; i<self.keysArr.count; i++) {
             NSArray *value = self.valuesDictionary[self.keysArr[i]];
-            self.valuesDictionary[self.keysArr[i]] = [index sortedArrayFromArray:value collationStringSelector:selector];
+            self.valuesDictionary[self.keysArr[i]] =  [NSMutableArray arrayWithArray:[index sortedArrayFromArray:value collationStringSelector:selector]];
+        }
+        
+        
+        for (int i = 0; i<self.valuesDictionary.count; i++) {
+            NSString *key = self.keysArr[i];
+            NSArray *value = self.valuesDictionary[key];
+            if (value.count == 0) {
+                [self removeWithIndex:i];
+                i--;
+            }
         }
     }
     
@@ -76,8 +102,28 @@
     id key = self.keysArr[index];
     [self.keysArr removeObjectAtIndex:index];
     [self.valuesDictionary removeObjectForKey:key];
+}
+
+-(void)inserValue:(id)value
+{
+    UILocalizedIndexedCollation *index = [UILocalizedIndexedCollation currentCollation];
     
+    NSInteger k = [index sectionForObject:value collationStringSelector:_selector];
+    char ch = k + (int)'A';
+    NSString *st = [NSString stringWithFormat:@"%c",ch];
     
-    
+    if (![self.keysArr containsObject:st]) {
+        NSMutableArray *array = [NSMutableArray array];
+        self.valuesDictionary[st] = array;
+        [array addObject:value];
+        [self.keysArr addObject:st];
+        [self.keysArr sortUsingComparator:^NSComparisonResult(id  _Nonnull obj1, id  _Nonnull obj2) {
+            return [obj1 compare:obj2];
+        }];
+    }else{
+        NSMutableArray *values = self.valuesDictionary[st];
+        [values addObject:value];
+        values = [NSMutableArray arrayWithArray:[index sortedArrayFromArray:values collationStringSelector:_selector]];
+    }
 }
 @end

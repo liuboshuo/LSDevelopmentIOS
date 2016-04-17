@@ -35,6 +35,10 @@
  *
  *  @return <#return value description#>
  */
+
+- (nullable UIImage *)fixOrientation;
+
+
 +(nullable UIImage *)imageWithColor:(nullable UIColor *)color;
 + (nullable UIImage *)imageWithColor:(nullable UIColor *)color size:(CGSize)size;
 /**
