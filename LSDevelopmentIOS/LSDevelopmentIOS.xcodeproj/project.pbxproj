@@ -10,6 +10,12 @@
 		64331BA05C426E16FA176073 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC468AB359815639B903D981 /* libPods.a */; };
 		88467BA11CBE26B400294F23 /* LSSkinMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 88467BA01CBE26B400294F23 /* LSSkinMananger.m */; };
 		884ABFA41CC125C200A0821F /* ProgressTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 884ABFA31CC125C200A0821F /* ProgressTest.m */; };
+		885FA0811CCA693700F29A95 /* CustomWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FA07E1CCA693700F29A95 /* CustomWebViewController.m */; };
+		885FA0821CCA693700F29A95 /* cc_webview_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FA0801CCA693700F29A95 /* cc_webview_back.png */; };
+		885FA0851CCA6A1100F29A95 /* ProgressWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FA0841CCA6A1100F29A95 /* ProgressWebViewController.m */; };
+		885FA08A1CCA735300F29A95 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FA0891CCA735300F29A95 /* TTTAttributedLabel.m */; };
+		885FA08E1CCA741700F29A95 /* CoreTextTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FA08D1CCA741700F29A95 /* CoreTextTest.m */; };
+		886DD1161CC4AA65004D2A0D /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 886DD1151CC4AA65004D2A0D /* ProgressView.m */; };
 		887B72011CBCD9270055615C /* LSFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887B71FE1CBCD9270055615C /* LSFirstViewController.m */; };
 		887B72021CBCD9270055615C /* LSSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 887B72001CBCD9270055615C /* LSSecondViewController.m */; };
 		887DE8531CBF29C400834BEC /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = 887DE8481CBF29C400834BEC /* NSMutableArray+SWUtilityButtons.m */; };
@@ -33,6 +39,13 @@
 		88832EFD1CC3448A00FD509A /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 88832EF81CC3448A00FD509A /* SSZipArchive.m */; };
 		88832EFF1CC3450B00FD509A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 88832EFE1CC3450B00FD509A /* libz.tbd */; };
 		88832F011CC3454A00FD509A /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 88832F001CC3454A00FD509A /* Readme.txt */; };
+		88925AEF1CC5BEEF0016D778 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AE41CC5BEEF0016D778 /* PopMenuModel.m */; };
+		88925AF01CC5BEEF0016D778 /* PopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AE61CC5BEEF0016D778 /* PopMenuTableViewCell.m */; };
+		88925AF11CC5BEEF0016D778 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AE81CC5BEEF0016D778 /* PopMenuView.m */; };
+		88925AF21CC5BEEF0016D778 /* PopMenuViewSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AEA1CC5BEEF0016D778 /* PopMenuViewSingleton.m */; };
+		88925AF31CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AEC1CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m */; };
+		88925AF41CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AEE1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m */; };
+		88925AF81CC5BFB80016D778 /* PopMenuViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AF71CC5BFB80016D778 /* PopMenuViewTest.m */; };
 		88A403121CC07BF100B6A5F1 /* AdressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403111CC07BF100B6A5F1 /* AdressBookManager.m */; };
 		88A403151CC0839400B6A5F1 /* ABPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403141CC0839400B6A5F1 /* ABPerson.m */; };
 		88A403191CC0970D00B6A5F1 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403181CC0970D00B6A5F1 /* ChineseToPinyin.m */; };
@@ -185,6 +198,17 @@
 		88467BA01CBE26B400294F23 /* LSSkinMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSkinMananger.m; sourceTree = "<group>"; };
 		884ABFA21CC125C200A0821F /* ProgressTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressTest.h; sourceTree = "<group>"; };
 		884ABFA31CC125C200A0821F /* ProgressTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressTest.m; sourceTree = "<group>"; };
+		885FA07D1CCA693700F29A95 /* CustomWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWebViewController.h; sourceTree = "<group>"; };
+		885FA07E1CCA693700F29A95 /* CustomWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWebViewController.m; sourceTree = "<group>"; };
+		885FA0801CCA693700F29A95 /* cc_webview_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc_webview_back.png; sourceTree = "<group>"; };
+		885FA0831CCA6A1100F29A95 /* ProgressWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressWebViewController.h; sourceTree = "<group>"; };
+		885FA0841CCA6A1100F29A95 /* ProgressWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressWebViewController.m; sourceTree = "<group>"; };
+		885FA0881CCA735300F29A95 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		885FA0891CCA735300F29A95 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		885FA08C1CCA741700F29A95 /* CoreTextTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreTextTest.h; sourceTree = "<group>"; };
+		885FA08D1CCA741700F29A95 /* CoreTextTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreTextTest.m; sourceTree = "<group>"; };
+		886DD1141CC4AA65004D2A0D /* ProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		886DD1151CC4AA65004D2A0D /* ProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
 		887B71FD1CBCD9270055615C /* LSFirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSFirstViewController.h; sourceTree = "<group>"; };
 		887B71FE1CBCD9270055615C /* LSFirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSFirstViewController.m; sourceTree = "<group>"; };
 		887B71FF1CBCD9270055615C /* LSSecondViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSSecondViewController.h; sourceTree = "<group>"; };
@@ -230,6 +254,20 @@
 		88832EF81CC3448A00FD509A /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		88832EFE1CC3450B00FD509A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		88832F001CC3454A00FD509A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		88925AE31CC5BEEF0016D778 /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
+		88925AE41CC5BEEF0016D778 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
+		88925AE51CC5BEEF0016D778 /* PopMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableViewCell.h; sourceTree = "<group>"; };
+		88925AE61CC5BEEF0016D778 /* PopMenuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuTableViewCell.m; sourceTree = "<group>"; };
+		88925AE71CC5BEEF0016D778 /* PopMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuView.h; sourceTree = "<group>"; };
+		88925AE81CC5BEEF0016D778 /* PopMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuView.m; sourceTree = "<group>"; };
+		88925AE91CC5BEEF0016D778 /* PopMenuViewSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuViewSingleton.h; sourceTree = "<group>"; };
+		88925AEA1CC5BEEF0016D778 /* PopMenuViewSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewSingleton.m; sourceTree = "<group>"; };
+		88925AEB1CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuViewTableViewDataSource.h; sourceTree = "<group>"; };
+		88925AEC1CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewTableViewDataSource.m; sourceTree = "<group>"; };
+		88925AED1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuViewTableViewDelegate.h; sourceTree = "<group>"; };
+		88925AEE1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewTableViewDelegate.m; sourceTree = "<group>"; };
+		88925AF61CC5BFB80016D778 /* PopMenuViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuViewTest.h; sourceTree = "<group>"; };
+		88925AF71CC5BFB80016D778 /* PopMenuViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewTest.m; sourceTree = "<group>"; };
 		88A403101CC07BF100B6A5F1 /* AdressBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdressBookManager.h; sourceTree = "<group>"; };
 		88A403111CC07BF100B6A5F1 /* AdressBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdressBookManager.m; sourceTree = "<group>"; };
 		88A403131CC0839400B6A5F1 /* ABPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPerson.h; sourceTree = "<group>"; };
@@ -501,7 +539,9 @@
 		88467B971CBDF92800294F23 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
-				88BD48731C93A80700DB47E4 /* AppDelegate.h */,
+				885FA08B1CCA73FF00F29A95 /* CoreText */,
+				885FA0861CCA701800F29A95 /* progressWebViewController */,
+				88925AF51CC5BFA20016D778 /* PopMenuView */,
 				884ABFA11CC125A400A0821F /* Progress */,
 				88A403201CC0DB1300B6A5F1 /* ScrollView */,
 				88A4031C1CC0AF9400B6A5F1 /* AdressBookViewController */,
@@ -527,6 +567,51 @@
 				884ABFA31CC125C200A0821F /* ProgressTest.m */,
 			);
 			name = Progress;
+			sourceTree = "<group>";
+		};
+		885FA07C1CCA693700F29A95 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				885FA07F1CCA693700F29A95 /* images */,
+				885FA07D1CCA693700F29A95 /* CustomWebViewController.h */,
+				885FA07E1CCA693700F29A95 /* CustomWebViewController.m */,
+			);
+			path = WebViewController;
+			sourceTree = "<group>";
+		};
+		885FA07F1CCA693700F29A95 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				885FA0801CCA693700F29A95 /* cc_webview_back.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		885FA0861CCA701800F29A95 /* progressWebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				885FA0831CCA6A1100F29A95 /* ProgressWebViewController.h */,
+				885FA0841CCA6A1100F29A95 /* ProgressWebViewController.m */,
+			);
+			name = progressWebViewController;
+			sourceTree = "<group>";
+		};
+		885FA0871CCA735300F29A95 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				885FA0881CCA735300F29A95 /* TTTAttributedLabel.h */,
+				885FA0891CCA735300F29A95 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
+			sourceTree = "<group>";
+		};
+		885FA08B1CCA73FF00F29A95 /* CoreText */ = {
+			isa = PBXGroup;
+			children = (
+				885FA08C1CCA741700F29A95 /* CoreTextTest.h */,
+				885FA08D1CCA741700F29A95 /* CoreTextTest.m */,
+			);
+			name = CoreText;
 			sourceTree = "<group>";
 		};
 		887DE8461CBF29C400834BEC /* SWTableViewCell */ = {
@@ -595,6 +680,8 @@
 			children = (
 				88832EE91CC321BF00FD509A /* LSProgressView.h */,
 				88832EEA1CC321BF00FD509A /* LSProgressView.m */,
+				886DD1141CC4AA65004D2A0D /* ProgressView.h */,
+				886DD1151CC4AA65004D2A0D /* ProgressView.m */,
 			);
 			path = ProgressView;
 			sourceTree = "<group>";
@@ -624,6 +711,34 @@
 				88832EF61CC3448A00FD509A /* zip.h */,
 			);
 			path = minizip;
+			sourceTree = "<group>";
+		};
+		88925AE21CC5BEEF0016D778 /* PopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				88925AE31CC5BEEF0016D778 /* PopMenuModel.h */,
+				88925AE41CC5BEEF0016D778 /* PopMenuModel.m */,
+				88925AE51CC5BEEF0016D778 /* PopMenuTableViewCell.h */,
+				88925AE61CC5BEEF0016D778 /* PopMenuTableViewCell.m */,
+				88925AE71CC5BEEF0016D778 /* PopMenuView.h */,
+				88925AE81CC5BEEF0016D778 /* PopMenuView.m */,
+				88925AE91CC5BEEF0016D778 /* PopMenuViewSingleton.h */,
+				88925AEA1CC5BEEF0016D778 /* PopMenuViewSingleton.m */,
+				88925AEB1CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.h */,
+				88925AEC1CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m */,
+				88925AED1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.h */,
+				88925AEE1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m */,
+			);
+			path = PopMenuView;
+			sourceTree = "<group>";
+		};
+		88925AF51CC5BFA20016D778 /* PopMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				88925AF61CC5BFB80016D778 /* PopMenuViewTest.h */,
+				88925AF71CC5BFB80016D778 /* PopMenuViewTest.m */,
+			);
+			name = PopMenuView;
 			sourceTree = "<group>";
 		};
 		88A4030F1CC07BD700B6A5F1 /* Contact */ = {
@@ -695,6 +810,7 @@
 				88CEEE011CBE493000FA9B78 /* RootViewController.m */,
 				88D4540B1CBF60D900E05A5D /* TableViewCellModel.h */,
 				88D4540C1CBF60D900E05A5D /* TableViewCellModel.m */,
+				88BD48731C93A80700DB47E4 /* AppDelegate.h */,
 				88BD48741C93A80700DB47E4 /* AppDelegate.m */,
 				88BD48791C93A80800DB47E4 /* Main.storyboard */,
 				88BD487C1C93A80800DB47E4 /* images.xcassets */,
@@ -942,6 +1058,9 @@
 		88EBED361CBCDEFA001EC50F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				885FA0871CCA735300F29A95 /* TTTAttributedLabel */,
+				885FA07C1CCA693700F29A95 /* WebViewController */,
+				88925AE21CC5BEEF0016D778 /* PopMenuView */,
 				88832EE81CC321BF00FD509A /* ProgressView */,
 				88832EE01CC321A800FD509A /* InfiniteScrollView */,
 				887DE8461CBF29C400834BEC /* SWTableViewCell */,
@@ -958,8 +1077,8 @@
 				88EBED6E1CBCDEFA001EC50F /* Thread */,
 				88EBED711CBCDEFA001EC50F /* UIBarButtonItem */,
 				88EBED781CBCDEFA001EC50F /* ViewController */,
-				88EBED771CBCDEFA001EC50F /* Utils.h */,
 				88D4542A1CBFA04000E05A5D /* Toast */,
+				88EBED771CBCDEFA001EC50F /* Utils.h */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -1467,6 +1586,7 @@
 				88EBEE1F1CBCDEFA001EC50F /* btn_selected.png in Resources */,
 				88EBEE021CBCDEFA001EC50F /* scan_2@2x.png in Resources */,
 				88EBEE111CBCDEFA001EC50F /* ManagerPropertyConfig.plist in Resources */,
+				885FA0821CCA693700F29A95 /* cc_webview_back.png in Resources */,
 				88EBEE191CBCDEFA001EC50F /* ZLBigImageCell.xib in Resources */,
 				88EBEE2D1CBCDEFA001EC50F /* ZLPhotoActionSheet.xib in Resources */,
 				88832F011CC3454A00FD509A /* Readme.txt in Resources */,
@@ -1582,6 +1702,7 @@
 				88EBEDFD1CBCDEFA001EC50F /* NetWorkTool.m in Sources */,
 				88A403191CC0970D00B6A5F1 /* ChineseToPinyin.m in Sources */,
 				884ABFA41CC125C200A0821F /* ProgressTest.m in Sources */,
+				88925AF31CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m in Sources */,
 				88EBEE171CBCDEFA001EC50F /* JZLocationConverter.m in Sources */,
 				88D4540A1CBF5D2600E05A5D /* AlbumToolTest.m in Sources */,
 				88D4541F1CBF799000E05A5D /* NetWorkTest.m in Sources */,
@@ -1592,9 +1713,11 @@
 				887DE8561CBF29C400834BEC /* SWTableViewCell.m in Sources */,
 				887DE8531CBF29C400834BEC /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				88EBEDF91CBCDEFA001EC50F /* OrderedDictionaryOC.m in Sources */,
+				88925AF21CC5BEEF0016D778 /* PopMenuViewSingleton.m in Sources */,
 				88D4542D1CBFA05A00E05A5D /* Toast.m in Sources */,
 				88EBEE381CBCDEFA001EC50F /* NavigationController.m in Sources */,
 				88D454291CBF9DA600E05A5D /* HUDAndToastTest.m in Sources */,
+				885FA0811CCA693700F29A95 /* CustomWebViewController.m in Sources */,
 				887DE8541CBF29C400834BEC /* SWCellScrollView.m in Sources */,
 				88EBEDF41CBCDEFA001EC50F /* MyMD5.m in Sources */,
 				88EBEDE61CBCDEFA001EC50F /* UIBezierPath+Category.m in Sources */,
@@ -1619,12 +1742,14 @@
 				88D453FF1CBF45C600E05A5D /* UIViewController+RESideMenu.m in Sources */,
 				88CEECF91CBE2E2700FA9B78 /* LSProjectUtils.m in Sources */,
 				88467BA11CBE26B400294F23 /* LSSkinMananger.m in Sources */,
+				885FA0851CCA6A1100F29A95 /* ProgressWebViewController.m in Sources */,
 				88EBEE2C1CBCDEFA001EC50F /* ZLPhotoActionSheet.m in Sources */,
 				88EBEDDA1CBCDEFA001EC50F /* NSArray+Category.m in Sources */,
 				88EBEDE71CBCDEFA001EC50F /* UIColor+Category.m in Sources */,
 				88EBEDED1CBCDEFA001EC50F /* UIScrollView+Category.m in Sources */,
 				88EBEDF71CBCDEFA001EC50F /* ShowBigImageView.m in Sources */,
 				88832EDD1CC320D000FD509A /* CopyFile.m in Sources */,
+				88925AF11CC5BEEF0016D778 /* PopMenuView.m in Sources */,
 				88EBEDFC1CBCDEFA001EC50F /* LSReachability.m in Sources */,
 				88832EFD1CC3448A00FD509A /* SSZipArchive.m in Sources */,
 				88EBEDFA1CBCDEFA001EC50F /* SafeArray.m in Sources */,
@@ -1632,29 +1757,36 @@
 				88A403231CC0DB2B00B6A5F1 /* ScrollViewTest.m in Sources */,
 				88EBEDEF1CBCDEFA001EC50F /* UIView+Extension.m in Sources */,
 				88D454171CBF6FC300E05A5D /* PlaySoundAndMusicTest.m in Sources */,
+				886DD1161CC4AA65004D2A0D /* ProgressView.m in Sources */,
 				887DE85E1CBF2AEA00834BEC /* LSTableViewCell.m in Sources */,
 				88EBEDE91CBCDEFA001EC50F /* UIDevice+Category.m in Sources */,
 				88D454311CBFA19000E05A5D /* LSNetWorkStatusTest.m in Sources */,
 				88A403121CC07BF100B6A5F1 /* AdressBookManager.m in Sources */,
 				88EBEDE21CBCDEFA001EC50F /* NSTimer+Category.m in Sources */,
+				885FA08E1CCA741700F29A95 /* CoreTextTest.m in Sources */,
 				88EBEE2F1CBCDEFA001EC50F /* ZLPhotoTool.m in Sources */,
 				88832EFB1CC3448A00FD509A /* unzip.c in Sources */,
 				88EBEDDF1CBCDEFA001EC50F /* NSNumber+Category.m in Sources */,
 				88832EDF1CC320D000FD509A /* SingleDownLoadFile.m in Sources */,
 				88EBEE291CBCDEFA001EC50F /* ZLAnimationTool.m in Sources */,
 				88D453FE1CBF45C600E05A5D /* RESideMenu.m in Sources */,
+				88925AF01CC5BEEF0016D778 /* PopMenuTableViewCell.m in Sources */,
+				885FA08A1CCA735300F29A95 /* TTTAttributedLabel.m in Sources */,
 				88BD48721C93A80700DB47E4 /* main.m in Sources */,
 				88EBEDE41CBCDEFA001EC50F /* UIApplication+Category.m in Sources */,
 				88D453FD1CBF45C600E05A5D /* RECommonFunctions.m in Sources */,
 				88C51D9E1CBFE1B500075CCB /* AdressBookViewController.m in Sources */,
 				88EBEDE01CBCDEFA001EC50F /* NSObject+Category.m in Sources */,
+				88925AF41CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m in Sources */,
 				88EBEDE81CBCDEFA001EC50F /* UIControl+Category.m in Sources */,
+				88925AF81CC5BFB80016D778 /* PopMenuViewTest.m in Sources */,
 				88EBEE3A1CBCDEFA001EC50F /* ErrorView.m in Sources */,
 				88832EFA1CC3448A00FD509A /* mztools.c in Sources */,
 				887DE8581CBF29C400834BEC /* SWUtilityButtonView.m in Sources */,
 				88EBEDFB1CBCDEFA001EC50F /* SafeDictionary.m in Sources */,
 				88EBEE091CBCDEFA001EC50F /* LSDispatchQueuePool.m in Sources */,
 				88EBEDEC1CBCDEFA001EC50F /* UIImage+Category.m in Sources */,
+				88925AEF1CC5BEEF0016D778 /* PopMenuModel.m in Sources */,
 				88EBEE351CBCDEFA001EC50F /* CommonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

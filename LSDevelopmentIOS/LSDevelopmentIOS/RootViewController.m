@@ -24,6 +24,9 @@
 #import "AdressBookViewController.h"
 #import "ScrollViewTest.h"
 #import "ProgressTest.h"
+#import "PopMenuViewTest.h"
+#import "CoreTextTest.h"
+#import "ProgressWebViewController.h"
 @interface RootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic , strong)UITableView *tableView;
@@ -53,7 +56,7 @@
     [self.datas addObject:BigImageShowViewController];
     
     
-    TableViewCellModel *TableViewCellViewController = [[TableViewCellModel alloc] initWithName:@"tableViewCell侧滑" className:[LSTableViewCellViewController class]];
+    TableViewCellModel *TableViewCellViewController = [[TableViewCellModel alloc] initWithName:@"tableViewCell侧滑（左滑）" className:[LSTableViewCellViewController class]];
     
     [self.datas addObject:TableViewCellViewController];
     
@@ -70,7 +73,7 @@
     [self.datas addObject:tabBar];
     
     
-    TableViewCellModel *scannerCodeTest = [[TableViewCellModel alloc] initWithName:@"二维码" className:[QRScannerCodeTest class]];
+    TableViewCellModel *scannerCodeTest = [[TableViewCellModel alloc] initWithName:@"二维码视图" className:[QRScannerCodeTest class]];
     
     [self.datas addObject:scannerCodeTest];
     
@@ -79,15 +82,15 @@
     
     [self.datas addObject:albumToolTest];
     
-    TableViewCellModel *alertView = [[TableViewCellModel alloc] initWithName:@"图片弹出框图" className:[AlertViewTest class]];
+    TableViewCellModel *alertView = [[TableViewCellModel alloc] initWithName:@"自定义图片弹出框图" className:[AlertViewTest class]];
     
     [self.datas addObject:alertView];
     
-    TableViewCellModel *playSoun = [[TableViewCellModel alloc] initWithName:@"播放音效音乐" className:[PlaySoundAndMusicTest class]];
+    TableViewCellModel *playSoun = [[TableViewCellModel alloc] initWithName:@"播放音效音乐Demo" className:[PlaySoundAndMusicTest class]];
     
     [self.datas addObject:playSoun];
     
-    TableViewCellModel *networkTest = [[TableViewCellModel alloc] initWithName:@"网络请求" className:[NetWorkTest class]];
+    TableViewCellModel *networkTest = [[TableViewCellModel alloc] initWithName:@"网络请求的用法" className:[NetWorkTest class]];
     
     [self.datas addObject:networkTest];
     
@@ -103,14 +106,23 @@
     
     [self.datas addObject:networkStatusTest];
     
-    TableViewCellModel *adressBookTest = [[TableViewCellModel alloc] initWithName:@"通讯录" className:[AdressBookViewController class]];
+    TableViewCellModel *adressBookTest = [[TableViewCellModel alloc] initWithName:@"通讯录Demo" className:[AdressBookViewController class]];
     [self.datas addObject:adressBookTest];
     
     TableViewCellModel *scrollViewTest = [[TableViewCellModel alloc] initWithName:@"轮播图" className:[ScrollViewTest class]];
     [self.datas addObject:scrollViewTest];
     
-    TableViewCellModel *progressTest = [[TableViewCellModel alloc] initWithName:@"进度" className:[ProgressTest class]];
+    TableViewCellModel *progressTest = [[TableViewCellModel alloc] initWithName:@"大文件单线程，多线程下载进度" className:[ProgressTest class]];
     [self.datas addObject:progressTest];
+    
+    TableViewCellModel *popMenuViewTest = [[TableViewCellModel alloc] initWithName:@"弹出式菜单" className:[PopMenuViewTest class]];
+    [self.datas addObject:popMenuViewTest];
+    
+    TableViewCellModel *progressWebViewTest = [[TableViewCellModel alloc] initWithName:@"带进度条的网页" className:[ProgressWebViewController class]];
+    [self.datas addObject:progressWebViewTest];
+    
+    TableViewCellModel *coreTextTest = [[TableViewCellModel alloc] initWithName:@"富文本" className:[CoreTextTest class]];
+    [self.datas addObject:coreTextTest];
 }
 
 

@@ -117,7 +117,7 @@
 
 -(void)setSkin
 {
-    //    [self.tabBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
+    [self.tabBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
     self.tabBar.tintColor = [LSSkinMananger colorNamed:@"Tab_title_Color"];
 }
 @end

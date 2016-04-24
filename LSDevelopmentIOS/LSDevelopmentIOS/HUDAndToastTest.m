@@ -52,6 +52,27 @@
     }];
     [self.view addSubview:button2];
     
+    
+    
+    
+    ProgressView *pregro = [[ProgressView alloc] initWithFrame:CGRectMake(100, 180, 100, 100)];
+    pregro.width = 5;
+    pregro.strokeColor = [UIColor orangeColor];
+    [self.view addSubview:pregro];
+    
+    
+    
+    [pregro loadingAnimation];
+    
+    UIButton *button0 = [[UIButton alloc] init];
+    [button0 setTitle:@"隐藏" forState:UIControlStateNormal];
+    [button0 setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+    button0.frame = CGRectMake(210, 190, 100, 30);
+    [button0 addBlockForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
+        [pregro stop];
+    }];
+    [self.view addSubview:button0];
+    
 }
 
 - (void)didReceiveMemoryWarning {
