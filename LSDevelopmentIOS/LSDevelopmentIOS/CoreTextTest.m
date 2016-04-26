@@ -27,7 +27,7 @@
     
     label.delegate = self;
     
-    label.text = @"Fork me on GitHub! )";
+    label.text = @"Fork me on GitHub";
     
     NSRange range = [label.text rangeOfString:@"me"];
     [label addLinkToURL:[NSURL URLWithString:@"http://github.com/liuboshuo"] withRange:range];

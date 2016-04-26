@@ -27,6 +27,7 @@
 #import "PopMenuViewTest.h"
 #import "CoreTextTest.h"
 #import "ProgressWebViewController.h"
+#import "NotificationHubCountTest.h"
 @interface RootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic , strong)UITableView *tableView;
@@ -123,6 +124,9 @@
     
     TableViewCellModel *coreTextTest = [[TableViewCellModel alloc] initWithName:@"富文本" className:[CoreTextTest class]];
     [self.datas addObject:coreTextTest];
+    
+    TableViewCellModel *notificationHubTest = [[TableViewCellModel alloc] initWithName:@"未读消息数量" className:[NotificationHubCountTest class]];
+    [self.datas addObject:notificationHubTest];
 }
 
 

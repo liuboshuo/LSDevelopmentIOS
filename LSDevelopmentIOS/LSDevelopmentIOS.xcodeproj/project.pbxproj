@@ -78,6 +78,8 @@
 		88D454291CBF9DA600E05A5D /* HUDAndToastTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D454281CBF9DA600E05A5D /* HUDAndToastTest.m */; };
 		88D4542D1CBFA05A00E05A5D /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4542C1CBFA05A00E05A5D /* Toast.m */; };
 		88D454311CBFA19000E05A5D /* LSNetWorkStatusTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D454301CBFA19000E05A5D /* LSNetWorkStatusTest.m */; };
+		88E044181CCF01B40078CC4D /* NotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E044171CCF01B40078CC4D /* NotificationHub.m */; };
+		88E0441C1CCF05DC0078CC4D /* NotificationHubCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0441B1CCF05DC0078CC4D /* NotificationHubCountTest.m */; };
 		88EBEDD91CBCDEFA001EC50F /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED051CBCDEFA001EC50F /* Foundation+Log.m */; };
 		88EBEDDA1CBCDEFA001EC50F /* NSArray+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED071CBCDEFA001EC50F /* NSArray+Category.m */; };
 		88EBEDDB1CBCDEFA001EC50F /* NSData+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED091CBCDEFA001EC50F /* NSData+Category.m */; };
@@ -329,6 +331,10 @@
 		88D4542C1CBFA05A00E05A5D /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		88D4542F1CBFA19000E05A5D /* LSNetWorkStatusTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkStatusTest.h; sourceTree = "<group>"; };
 		88D454301CBFA19000E05A5D /* LSNetWorkStatusTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkStatusTest.m; sourceTree = "<group>"; };
+		88E044161CCF01B40078CC4D /* NotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHub.h; sourceTree = "<group>"; };
+		88E044171CCF01B40078CC4D /* NotificationHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHub.m; sourceTree = "<group>"; };
+		88E0441A1CCF05DC0078CC4D /* NotificationHubCountTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHubCountTest.h; sourceTree = "<group>"; };
+		88E0441B1CCF05DC0078CC4D /* NotificationHubCountTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHubCountTest.m; sourceTree = "<group>"; };
 		88EBED031CBCDEFA001EC50F /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
 		88EBED051CBCDEFA001EC50F /* Foundation+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Foundation+Log.m"; sourceTree = "<group>"; };
 		88EBED061CBCDEFA001EC50F /* NSArray+Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Category.h"; sourceTree = "<group>"; };
@@ -539,6 +545,7 @@
 		88467B971CBDF92800294F23 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				88E044191CCF05B00078CC4D /* NotificationCount */,
 				885FA08B1CCA73FF00F29A95 /* CoreText */,
 				885FA0861CCA701800F29A95 /* progressWebViewController */,
 				88925AF51CC5BFA20016D778 /* PopMenuView */,
@@ -953,6 +960,24 @@
 			name = NetWorkStatus;
 			sourceTree = "<group>";
 		};
+		88E044151CCF01900078CC4D /* NotificationHubCount */ = {
+			isa = PBXGroup;
+			children = (
+				88E044161CCF01B40078CC4D /* NotificationHub.h */,
+				88E044171CCF01B40078CC4D /* NotificationHub.m */,
+			);
+			path = NotificationHubCount;
+			sourceTree = "<group>";
+		};
+		88E044191CCF05B00078CC4D /* NotificationCount */ = {
+			isa = PBXGroup;
+			children = (
+				88E0441A1CCF05DC0078CC4D /* NotificationHubCountTest.h */,
+				88E0441B1CCF05DC0078CC4D /* NotificationHubCountTest.m */,
+			);
+			name = NotificationCount;
+			sourceTree = "<group>";
+		};
 		88EBED001CBCDEFA001EC50F /* DevelopmentIOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -1058,6 +1083,7 @@
 		88EBED361CBCDEFA001EC50F /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				88E044151CCF01900078CC4D /* NotificationHubCount */,
 				885FA0871CCA735300F29A95 /* TTTAttributedLabel */,
 				885FA07C1CCA693700F29A95 /* WebViewController */,
 				88925AE21CC5BEEF0016D778 /* PopMenuView */,
@@ -1717,6 +1743,7 @@
 				88D4542D1CBFA05A00E05A5D /* Toast.m in Sources */,
 				88EBEE381CBCDEFA001EC50F /* NavigationController.m in Sources */,
 				88D454291CBF9DA600E05A5D /* HUDAndToastTest.m in Sources */,
+				88E044181CCF01B40078CC4D /* NotificationHub.m in Sources */,
 				885FA0811CCA693700F29A95 /* CustomWebViewController.m in Sources */,
 				887DE8541CBF29C400834BEC /* SWCellScrollView.m in Sources */,
 				88EBEDF41CBCDEFA001EC50F /* MyMD5.m in Sources */,
@@ -1785,6 +1812,7 @@
 				887DE8581CBF29C400834BEC /* SWUtilityButtonView.m in Sources */,
 				88EBEDFB1CBCDEFA001EC50F /* SafeDictionary.m in Sources */,
 				88EBEE091CBCDEFA001EC50F /* LSDispatchQueuePool.m in Sources */,
+				88E0441C1CCF05DC0078CC4D /* NotificationHubCountTest.m in Sources */,
 				88EBEDEC1CBCDEFA001EC50F /* UIImage+Category.m in Sources */,
 				88925AEF1CC5BEEF0016D778 /* PopMenuModel.m in Sources */,
 				88EBEE351CBCDEFA001EC50F /* CommonViewController.m in Sources */,
