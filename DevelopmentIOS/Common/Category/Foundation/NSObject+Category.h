@@ -10,6 +10,8 @@
 
 @interface NSObject (Category)<NSCoding>
 
+
+@property(nonatomic , strong)NSDictionary *userInfo;
 /**
  *  对象的名称
  *

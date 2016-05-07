@@ -9,3 +9,7 @@ pod "MBProgressHUD"
 platform :ios, "7.0"
 
 pod "SDWebImage"
+
+platform :ios, "7.0"
+
+pod "JSPatch"

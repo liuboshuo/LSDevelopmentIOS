@@ -24,6 +24,19 @@ static const int block_key;
 
 @implementation NSObjectKVOBlockTarget
 
+static const int *userInfoKey;
+
+-(void)setUserInfo:(NSDictionary *)userInfo
+{
+    objc_setAssociatedObject(self, &userInfoKey, userInfo, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+-(NSDictionary *)userInfo
+{
+    return objc_getAssociatedObject(self, &userInfoKey);
+}
+
+
 -(id)initWithBlock:(void (^)(__weak id, id, id))block
 {
     if (self = [super init]) {

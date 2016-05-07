@@ -10,6 +10,7 @@
 		64331BA05C426E16FA176073 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC468AB359815639B903D981 /* libPods.a */; };
 		88467BA11CBE26B400294F23 /* LSSkinMananger.m in Sources */ = {isa = PBXBuildFile; fileRef = 88467BA01CBE26B400294F23 /* LSSkinMananger.m */; };
 		884ABFA41CC125C200A0821F /* ProgressTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 884ABFA31CC125C200A0821F /* ProgressTest.m */; };
+		884CC1F81CCF19EB0014F91B /* LSVideoTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 884CC1F71CCF19EB0014F91B /* LSVideoTest.m */; };
 		885FA0811CCA693700F29A95 /* CustomWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FA07E1CCA693700F29A95 /* CustomWebViewController.m */; };
 		885FA0821CCA693700F29A95 /* cc_webview_back.png in Resources */ = {isa = PBXBuildFile; fileRef = 885FA0801CCA693700F29A95 /* cc_webview_back.png */; };
 		885FA0851CCA6A1100F29A95 /* ProgressWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 885FA0841CCA6A1100F29A95 /* ProgressWebViewController.m */; };
@@ -39,6 +40,8 @@
 		88832EFD1CC3448A00FD509A /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 88832EF81CC3448A00FD509A /* SSZipArchive.m */; };
 		88832EFF1CC3450B00FD509A /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 88832EFE1CC3450B00FD509A /* libz.tbd */; };
 		88832F011CC3454A00FD509A /* Readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 88832F001CC3454A00FD509A /* Readme.txt */; };
+		88912A561CDC4D2C0003D958 /* UIActionSheet+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 88912A551CDC4D2C0003D958 /* UIActionSheet+Block.m */; };
+		88912A591CDC4D340003D958 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = 88912A581CDC4D340003D958 /* UIAlertView+Block.m */; };
 		88925AEF1CC5BEEF0016D778 /* PopMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AE41CC5BEEF0016D778 /* PopMenuModel.m */; };
 		88925AF01CC5BEEF0016D778 /* PopMenuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AE61CC5BEEF0016D778 /* PopMenuTableViewCell.m */; };
 		88925AF11CC5BEEF0016D778 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AE81CC5BEEF0016D778 /* PopMenuView.m */; };
@@ -200,6 +203,8 @@
 		88467BA01CBE26B400294F23 /* LSSkinMananger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSSkinMananger.m; sourceTree = "<group>"; };
 		884ABFA21CC125C200A0821F /* ProgressTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressTest.h; sourceTree = "<group>"; };
 		884ABFA31CC125C200A0821F /* ProgressTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressTest.m; sourceTree = "<group>"; };
+		884CC1F61CCF19EB0014F91B /* LSVideoTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSVideoTest.h; sourceTree = "<group>"; };
+		884CC1F71CCF19EB0014F91B /* LSVideoTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSVideoTest.m; sourceTree = "<group>"; };
 		885FA07D1CCA693700F29A95 /* CustomWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomWebViewController.h; sourceTree = "<group>"; };
 		885FA07E1CCA693700F29A95 /* CustomWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomWebViewController.m; sourceTree = "<group>"; };
 		885FA0801CCA693700F29A95 /* cc_webview_back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cc_webview_back.png; sourceTree = "<group>"; };
@@ -256,6 +261,10 @@
 		88832EF81CC3448A00FD509A /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
 		88832EFE1CC3450B00FD509A /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		88832F001CC3454A00FD509A /* Readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Readme.txt; sourceTree = "<group>"; };
+		88912A541CDC4D2C0003D958 /* UIActionSheet+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActionSheet+Block.h"; sourceTree = "<group>"; };
+		88912A551CDC4D2C0003D958 /* UIActionSheet+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActionSheet+Block.m"; sourceTree = "<group>"; };
+		88912A571CDC4D340003D958 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		88912A581CDC4D340003D958 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
 		88925AE31CC5BEEF0016D778 /* PopMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuModel.h; sourceTree = "<group>"; };
 		88925AE41CC5BEEF0016D778 /* PopMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuModel.m; sourceTree = "<group>"; };
 		88925AE51CC5BEEF0016D778 /* PopMenuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuTableViewCell.h; sourceTree = "<group>"; };
@@ -545,6 +554,7 @@
 		88467B971CBDF92800294F23 /* Demo */ = {
 			isa = PBXGroup;
 			children = (
+				884CC1F91CCF1A300014F91B /* VideoPlay */,
 				88E044191CCF05B00078CC4D /* NotificationCount */,
 				885FA08B1CCA73FF00F29A95 /* CoreText */,
 				885FA0861CCA701800F29A95 /* progressWebViewController */,
@@ -574,6 +584,15 @@
 				884ABFA31CC125C200A0821F /* ProgressTest.m */,
 			);
 			name = Progress;
+			sourceTree = "<group>";
+		};
+		884CC1F91CCF1A300014F91B /* VideoPlay */ = {
+			isa = PBXGroup;
+			children = (
+				884CC1F61CCF19EB0014F91B /* LSVideoTest.h */,
+				884CC1F71CCF19EB0014F91B /* LSVideoTest.m */,
+			);
+			name = VideoPlay;
 			sourceTree = "<group>";
 		};
 		885FA07C1CCA693700F29A95 /* WebViewController */ = {
@@ -869,8 +888,8 @@
 				887B71FD1CBCD9270055615C /* LSFirstViewController.h */,
 				887B71FE1CBCD9270055615C /* LSFirstViewController.m */,
 				887B71FF1CBCD9270055615C /* LSSecondViewController.h */,
-				88D454001CBF49FB00E05A5D /* LeftMenuView.h */,
 				887B72001CBCD9270055615C /* LSSecondViewController.m */,
+				88D454001CBF49FB00E05A5D /* LeftMenuView.h */,
 				88D454011CBF49FB00E05A5D /* LeftMenuView.m */,
 			);
 			name = SkinAndDrewer;
@@ -1050,6 +1069,8 @@
 		88EBED1B1CBCDEFA001EC50F /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				88912A571CDC4D340003D958 /* UIAlertView+Block.h */,
+				88912A581CDC4D340003D958 /* UIAlertView+Block.m */,
 				88EBED1C1CBCDEFA001EC50F /* UIApplication+Category.h */,
 				88EBED1D1CBCDEFA001EC50F /* UIApplication+Category.m */,
 				88EBED1E1CBCDEFA001EC50F /* UIBarButtonItem+Category.h */,
@@ -1058,6 +1079,8 @@
 				88EBED211CBCDEFA001EC50F /* UIBezierPath+Category.m */,
 				88EBED221CBCDEFA001EC50F /* UIColor+Category.h */,
 				88EBED231CBCDEFA001EC50F /* UIColor+Category.m */,
+				88912A541CDC4D2C0003D958 /* UIActionSheet+Block.h */,
+				88912A551CDC4D2C0003D958 /* UIActionSheet+Block.m */,
 				88EBED241CBCDEFA001EC50F /* UIControl+Category.h */,
 				88EBED251CBCDEFA001EC50F /* UIControl+Category.m */,
 				88EBED261CBCDEFA001EC50F /* UIDevice+Category.h */,
@@ -1719,6 +1742,7 @@
 				88EBEE1A1CBCDEFA001EC50F /* ZLCollectionCell.m in Sources */,
 				887DE8571CBF29C400834BEC /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				88EBEDEE1CBCDEFA001EC50F /* UITextField+Category.m in Sources */,
+				884CC1F81CCF19EB0014F91B /* LSVideoTest.m in Sources */,
 				88832EE31CC321A800FD509A /* LSInfiniteScrollView.m in Sources */,
 				88EBEDDB1CBCDEFA001EC50F /* NSData+Category.m in Sources */,
 				887DE85B1CBF2AAD00834BEC /* LSTableViewCellViewController.m in Sources */,
@@ -1775,7 +1799,9 @@
 				88EBEDE71CBCDEFA001EC50F /* UIColor+Category.m in Sources */,
 				88EBEDED1CBCDEFA001EC50F /* UIScrollView+Category.m in Sources */,
 				88EBEDF71CBCDEFA001EC50F /* ShowBigImageView.m in Sources */,
+				88912A591CDC4D340003D958 /* UIAlertView+Block.m in Sources */,
 				88832EDD1CC320D000FD509A /* CopyFile.m in Sources */,
+				88912A561CDC4D2C0003D958 /* UIActionSheet+Block.m in Sources */,
 				88925AF11CC5BEEF0016D778 /* PopMenuView.m in Sources */,
 				88EBEDFC1CBCDEFA001EC50F /* LSReachability.m in Sources */,
 				88832EFD1CC3448A00FD509A /* SSZipArchive.m in Sources */,

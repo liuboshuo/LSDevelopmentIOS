@@ -69,16 +69,16 @@
 }
 
 
--(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
-{
-    //    if ([self.topViewController isKindOfClass:[CommonViewController class]]) {
-    //        if ([self.topViewController respondsToSelector:@selector(gestureRecognizerShouldBegin:)]) {
-    //            CommonViewController *vc = (CommonViewController *)self.topViewController;
-    //            self.enableRightGesture = [vc gestureRecognizerShouldBegin];
-    //        }
-    //    }
-    return YES;
-}
+//-(BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
+//{
+//    //    if ([self.topViewController isKindOfClass:[CommonViewController class]]) {
+//    //        if ([self.topViewController respondsToSelector:@selector(gestureRecognizerShouldBegin:)]) {
+//    //            CommonViewController *vc = (CommonViewController *)self.topViewController;
+//    //            self.enableRightGesture = [vc gestureRecognizerShouldBegin];
+//    //        }
+//    //    }
+//    return YES;
+//}
 -(void)setSkin
 {
     [self.navigationBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];

@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "LSDevelopmetIOS.h"
 #import "RootViewController.h"
+#import "JPEngine.h"
 @interface AppDelegate ()
 
 @end

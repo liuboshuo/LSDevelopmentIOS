@@ -28,6 +28,9 @@
 #import "CoreTextTest.h"
 #import "ProgressWebViewController.h"
 #import "NotificationHubCountTest.h"
+#import "LSVideoTest.h"
+
+
 @interface RootViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property(nonatomic , strong)UITableView *tableView;
@@ -40,15 +43,20 @@
 
 @implementation RootViewController
 
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     self.view.backgroundColor = [UIColor whiteColor];
+    self.title = @"测试";
     UITableView *tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
-    
+    _tableView = tableView;
     //
     //    self.datas = @[@"图片点击放大效果",@"tableViewCell侧滑",@"皮肤和抽屉效果",@"皮肤和经典TabBar和导航效果",@"二维码",@"图片选择"];
     
@@ -127,6 +135,13 @@
     
     TableViewCellModel *notificationHubTest = [[TableViewCellModel alloc] initWithName:@"未读消息数量" className:[NotificationHubCountTest class]];
     [self.datas addObject:notificationHubTest];
+    
+    TableViewCellModel *videoPalyTest = [[TableViewCellModel alloc] initWithName:@"视频播放" className:[LSVideoTest class]];
+    [self.datas addObject:videoPalyTest];
+    
+    [self.navigationController.navigationBar setBarTintColor:[UIColor redColor]];
+    
+    [self setScrollVew:_tableView scrollOffsetY:200 options:HiddenControlOptionLeft];
 }
 
 
