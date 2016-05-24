@@ -54,6 +54,8 @@
 		88A403191CC0970D00B6A5F1 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403181CC0970D00B6A5F1 /* ChineseToPinyin.m */; };
 		88A4031B1CC0AE4E00B6A5F1 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A4031A1CC0AE4D00B6A5F1 /* 111.png */; };
 		88A403231CC0DB2B00B6A5F1 /* ScrollViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403221CC0DB2B00B6A5F1 /* ScrollViewTest.m */; };
+		88AC30D31CE5D28500E4B308 /* LSDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC30D01CE5D28500E4B308 /* LSDownloadManager.m */; };
+		88AC30D41CE5D28500E4B308 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC30D21CE5D28500E4B308 /* SessionModel.m */; };
 		88BD48721C93A80700DB47E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD48711C93A80700DB47E4 /* main.m */; };
 		88BD48751C93A80700DB47E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD48741C93A80700DB47E4 /* AppDelegate.m */; };
 		88BD487B1C93A80800DB47E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88BD48791C93A80800DB47E4 /* Main.storyboard */; };
@@ -288,6 +290,10 @@
 		88A4031A1CC0AE4D00B6A5F1 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 		88A403211CC0DB2B00B6A5F1 /* ScrollViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewTest.h; sourceTree = "<group>"; };
 		88A403221CC0DB2B00B6A5F1 /* ScrollViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTest.m; sourceTree = "<group>"; };
+		88AC30CF1CE5D28500E4B308 /* LSDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDownloadManager.h; sourceTree = "<group>"; };
+		88AC30D01CE5D28500E4B308 /* LSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDownloadManager.m; sourceTree = "<group>"; };
+		88AC30D11CE5D28500E4B308 /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
+		88AC30D21CE5D28500E4B308 /* SessionModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SessionModel.m; sourceTree = "<group>"; };
 		88BD486D1C93A80700DB47E4 /* LSDevelopmentIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LSDevelopmentIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88BD48711C93A80700DB47E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		88BD48731C93A80700DB47E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -805,6 +811,17 @@
 			name = ScrollView;
 			sourceTree = "<group>";
 		};
+		88AC30CE1CE5D28500E4B308 /* DownloadManager */ = {
+			isa = PBXGroup;
+			children = (
+				88AC30CF1CE5D28500E4B308 /* LSDownloadManager.h */,
+				88AC30D01CE5D28500E4B308 /* LSDownloadManager.m */,
+				88AC30D11CE5D28500E4B308 /* SessionModel.h */,
+				88AC30D21CE5D28500E4B308 /* SessionModel.m */,
+			);
+			path = DownloadManager;
+			sourceTree = "<group>";
+		};
 		88BD48641C93A80600DB47E4 = {
 			isa = PBXGroup;
 			children = (
@@ -1298,6 +1315,7 @@
 				88CEECFA1CBE2E3100FA9B78 /* HttpRequest */,
 				88EBED801CBCDEFA001EC50F /* Location */,
 				88832ED61CC320D000FD509A /* Download */,
+				88AC30CE1CE5D28500E4B308 /* DownloadManager */,
 				88EBED851CBCDEFA001EC50F /* Manager.h */,
 				88EBED861CBCDEFA001EC50F /* ManagerPropertyConfig.plist */,
 				88EBED871CBCDEFA001EC50F /* ManagerPropertyConstant.h */,
@@ -1730,6 +1748,7 @@
 				887DE8631CBF310600834BEC /* LSBigImageShowViewController.m in Sources */,
 				88EBEE281CBCDEFA001EC50F /* ToastUtils.m in Sources */,
 				88EBEDE11CBCDEFA001EC50F /* NSString+Category.m in Sources */,
+				88AC30D41CE5D28500E4B308 /* SessionModel.m in Sources */,
 				88EBEDD91CBCDEFA001EC50F /* Foundation+Log.m in Sources */,
 				88EBEDF51CBCDEFA001EC50F /* NSData+AES.m in Sources */,
 				88D4540D1CBF60D900E05A5D /* TableViewCellModel.m in Sources */,
@@ -1810,6 +1829,7 @@
 				88A403231CC0DB2B00B6A5F1 /* ScrollViewTest.m in Sources */,
 				88EBEDEF1CBCDEFA001EC50F /* UIView+Extension.m in Sources */,
 				88D454171CBF6FC300E05A5D /* PlaySoundAndMusicTest.m in Sources */,
+				88AC30D31CE5D28500E4B308 /* LSDownloadManager.m in Sources */,
 				886DD1161CC4AA65004D2A0D /* ProgressView.m in Sources */,
 				887DE85E1CBF2AEA00834BEC /* LSTableViewCell.m in Sources */,
 				88EBEDE91CBCDEFA001EC50F /* UIDevice+Category.m in Sources */,

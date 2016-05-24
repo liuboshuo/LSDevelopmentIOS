@@ -15,56 +15,65 @@
 
 static NSBundle *SkinDefaultColor = nil;
 static NSBundle *SkinNightColor = nil;
-
+static BOOL _isUseSkinManager;
 
 @implementation LSSkinMananger
 
 singletonImplementation(LSSkinMananger);
 
--(void)initSkinSetting
+-(void)initSkinSetting:(BOOL)isUseSkinManager
 {
-    NSNumber *currentSKinType = [UserDefaults objectForKey:LSCurrentSkinType];
-    if (currentSKinType == nil) {
-        
-        [self setCurrentSkinType:LSSkinManangerDefalut];
-        
-    }else{
-        [self setCurrentSkinType:(LSSkinManangerType)currentSKinType.integerValue];
+    _isUseSkinManager = isUseSkinManager;
+    if (isUseSkinManager) {
+        NSNumber *currentSKinType = [UserDefaults objectForKey:LSCurrentSkinType];
+        if (currentSKinType == nil) {
+            
+            [self setCurrentSkinType:LSSkinManangerDefalut];
+            
+        }else{
+            [self setCurrentSkinType:(LSSkinManangerType)currentSKinType.integerValue];
+        }
     }
 }
 
 -(void)setCurrentSkinType:(LSSkinManangerType)currentSkinType
 {
-    
     _currentSkinType = currentSkinType;
+    if (_isUseSkinManager) {
+        [UserDefaults setObject:[NSNumber numberWithInteger:currentSkinType] forKey:LSCurrentSkinType];
+        //    [LSProjectUtils saveValueNSUserdefaultsWithKey:LSCurrentSkinType value:[NSNumber numberWithInteger:currentSkinType]];
+        //通知更新皮肤颜色
+    }
     
-    [UserDefaults setObject:[NSNumber numberWithInteger:currentSkinType] forKey:LSCurrentSkinType];
-    //    [LSProjectUtils saveValueNSUserdefaultsWithKey:LSCurrentSkinType value:[NSNumber numberWithInteger:currentSkinType]];
-    //通知更新皮肤颜色
 }
 
 +(UIImage *)imageNamed:(NSString *)name
 {
-    NSString *AppPath = [[NSBundle mainBundle] resourcePath];
-    if ([LSSkinMananger sharedLSSkinMananger].currentSkinType == LSSkinManangerDefalut) {
-        return [UIImage imageNamed:name];
-    }else{
-        if ([LSSkinMananger sharedLSSkinMananger].currentSkinType == LSSkinManangerNight) {
-            AppPath = [AppPath stringByAppendingPathComponent:@"switch_night"];
-        }
-        if (iOS7) {
-            AppPath = [AppPath stringByAppendingPathComponent:name];
+    if (_isUseSkinManager) {
+        NSString *AppPath = [[NSBundle mainBundle] resourcePath];
+        if ([LSSkinMananger sharedLSSkinMananger].currentSkinType == LSSkinManangerDefalut) {
+            return [UIImage imageNamed:name];
         }else{
-            AppPath = [AppPath stringByAppendingPathComponent:name];
-            AppPath = [NSString stringWithFormat:@"%@@2x.png",AppPath];
+            if ([LSSkinMananger sharedLSSkinMananger].currentSkinType == LSSkinManangerNight) {
+                AppPath = [AppPath stringByAppendingPathComponent:@"switch_night"];
+            }
+            if (iOS7) {
+                AppPath = [AppPath stringByAppendingPathComponent:name];
+            }else{
+                AppPath = [AppPath stringByAppendingPathComponent:name];
+                AppPath = [NSString stringWithFormat:@"%@@2x.png",AppPath];
+            }
+            return [UIImage imageWithContentsOfFile:AppPath];
         }
-        return [UIImage imageWithContentsOfFile:AppPath];
     }
+    return nil;
 }
 
 +(UIColor *)colorNamed:(NSString *)name
 {
-    
+    if (!_isUseSkinManager) {
+        return nil;
+    }
     NSString *AppPath = [[NSBundle mainBundle] resourcePath];
     NSBundle *bundleColorConfig = nil;
     if ([LSSkinMananger sharedLSSkinMananger].currentSkinType == LSSkinManangerDefalut) {

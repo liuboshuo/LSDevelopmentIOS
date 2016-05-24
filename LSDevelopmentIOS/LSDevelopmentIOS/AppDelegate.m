@@ -21,7 +21,7 @@
     // Override point for customization after application launch.
     
     
-    [[LSSkinMananger sharedLSSkinMananger] initSkinSetting];
+    [[LSSkinMananger sharedLSSkinMananger] initSkinSetting:YES];
     
     //    TabBarController *tab = [[TabBarController alloc] init];
     
@@ -36,8 +36,6 @@
     [self.window makeKeyAndVisible];
     
     self.window.rootViewController = nav;
-    
-    
     
     return YES;
 }

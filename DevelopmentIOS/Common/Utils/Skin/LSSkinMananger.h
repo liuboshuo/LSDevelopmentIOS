@@ -32,7 +32,7 @@ singletonInterface(LSSkinMananger);
 /**
  *  在appDeleate初始化
  */
--(void)initSkinSetting;
+-(void)initSkinSetting:(BOOL)isUseSkinManager;
 
 /**
  *  根据名称获取一张图片
