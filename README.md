@@ -4,11 +4,15 @@
   
     常用的工具类和分类Common(Category,Utils) ,
     
-    Manager包含封装好的定位和网络请求,
+    Manager包含封装好的定位和网络请求,通讯录的访问，大文件的下载（面向对象的封装）
     
-    UI系统自定义的经典UITabBarController和UINavigationController的搭建,(后期混更新自定义的UITabBarController和UINavigationColtroller的搭建方式和抽屉界面等)
+    UI系统自定义的经典UITabBarController和UINavigationController的搭建,
     
-    ThirdPart是用到的大三方API，这里只做简单介绍
+    抽屉效果的搭建
+    
+    (后期混更新自定义的UITabBarController和UINavigationColtroller的搭建方式等)
+    
+    ThirdPart是用到的第三方API，这里只做简单介绍
     
   详细介绍：
   
@@ -23,6 +27,16 @@
         CALayer
         
       Utils目录下:
+      
+        NotificationHubCount:消息数字提醒的封装
+        
+        WebViewController:带进度条的UIWebView的封装
+        
+        popMenuView:弹出式的菜单
+        
+        ProgressView:弧形进度条
+        
+        InfiniteScrollView:轮播图
         
         Album:打开相册或相机工具类的封装
         
@@ -57,7 +71,8 @@
       HttpRquest:(网络请求的封装（AFNetworking）)
       
       Location:(定位基于系统)
-    
+      
+      DownloadManager:大文件的下载和视频的下载边下载边播放的实现方式
       
     UI:
       
@@ -65,14 +80,14 @@
       
       CustomTabUI:(待完成)
       
-      NormalDrawerUI:(待完成)
+      NormalDrawerUI:
       
 Demo:
   
-  测试Demo
+  测试Demo不是很完善
   
-  详解请继续关注
-      
+  
+  谢谢大家！
       
         
         
