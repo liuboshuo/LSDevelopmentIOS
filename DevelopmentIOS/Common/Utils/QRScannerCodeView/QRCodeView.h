@@ -9,6 +9,17 @@
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVFoundation.h>
 
+
+/**
+ 
+ 二维码扫描的使用
+ self.qrCodeView = [[QRCodeView alloc] init];
+ [self.view addSubview:_qrCodeView];
+ _qrCodeView.delegate = self;
+ [_qrCodeView beginScanning];
+ self.view.backgroundColor = [UIColor colorWithRed:0 green:0 blue:0 alpha:1];
+ */
+
 @class QRCodeView;
 
 @protocol QRCodeViewAction <NSObject>

@@ -10,6 +10,19 @@
 #import "SessionModel.h"
 @class SessionModel;
 
+
+/**
+ *  
+ LSDownloadManager *mgr = [LSDownloadManager shareInstance];
+ [mgr download:@"http://221.228.17.252:8088/vedio/360.mp4" progress:^(CGFloat progress, NSString *speed, NSString *remainingTime, NSString *writenSize, NSString *totalSize) {
+ NSLog(@"进度--%f 速度:%@,剩余:%@,下载:%@,下载文件大小:%@",progress,speed,remainingTime,writenSize,totalSize);
+ } state:^(DownloadState state) {
+ NSLog(@"%d",state);
+ }];
+ 
+ 
+ */
+
 @protocol LSDownloadManagerDelegate <NSObject,NSCopying>
 
 /**

@@ -29,6 +29,9 @@
     
     self.navigationItem.rightBarButtonItem = [self rightButtonItemWithTitle:@"打开通讯录"];
     
+    
+    
+    
     [[AdressBookManager sharedAdressBookManager] getAdressBookOfAllPeople:^(NSMutableArray<ABPerson *> *peoples) {
         NSLog(@"%@",peoples);
         self.arrays = peoples;

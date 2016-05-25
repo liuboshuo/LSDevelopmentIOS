@@ -8,14 +8,26 @@
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
-@interface AudioTool : NSObject
 
+/**
+ *  播放音效
+ 
+ [AudioTool playAudioWithFileName:@"sound.m4a"];
+ 
+ 播放音乐
+ [AudioTool pauseMusicWithFileName:@"music.mp3"];
+ *
+ *  @return <#return value description#>
+ */
 
 /**
  *  播放音效
  *
  *  @param filename <#filename description#>
  */
+
+
+@interface AudioTool : NSObject
 +(void)playAudioWithFileName:(NSString *)filename;
 /**
  *  销毁音效

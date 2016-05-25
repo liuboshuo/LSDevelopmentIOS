@@ -10,6 +10,21 @@
 #import "SingletonTemplate.h"
 #import "LocationManager.h"
 
+
+
+/**
+ *  
+ 反地理编码的使用
+ 获取所在位置的坐标，城市名，和详细的信息（address）
+ [[ReverseGeocodeLocation sharedReverseGeocodeLocation] getLocation:^(NSDictionary *adress, NSString *cityName, CLLocation *location) {
+ NSString *text = [NSString stringWithFormat:@"城市名:%@\n地址:%@\n坐标:%@",cityName,adress,location];
+ label.text = text;
+ }];
+ *
+ *  @param adress   <#adress description#>
+ *  @param cityName <#cityName description#>
+ *  @param location <#location description#>
+ */
 typedef void(^locationCurrentCity)(NSDictionary *adress ,NSString *cityName, CLLocation *location);
 
 @interface ReverseGeocodeLocation : NSObject

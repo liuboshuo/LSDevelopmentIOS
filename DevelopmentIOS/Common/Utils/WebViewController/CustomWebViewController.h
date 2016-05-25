@@ -12,6 +12,15 @@
 
 /**
  *  网页浏览器的封装
+ 
+ 
+ CustomWebViewController *web = [[CustomWebViewController alloc] initProgressWebViewWithURLStr:@"http://www.baidu.com" withTitle:@"百度"];
+ web.navigatemColor = [UIColor orangeColor];
+ web.progressColor = [UIColor orangeColor];
+ [self.navigationController pushViewController:web animated:YES];
+ 
+ 
+ 
  */
 @interface CustomWebViewController : UIViewController
 

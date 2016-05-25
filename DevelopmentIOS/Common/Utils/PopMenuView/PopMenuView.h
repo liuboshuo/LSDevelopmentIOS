@@ -9,6 +9,40 @@
 #import <UIKit/UIKit.h>
 #import "PopMenuViewTableViewDataSource.h"
 #import "PopMenuViewTableViewDelegate.h"
+
+
+
+/**
+ *
+ 用法:（弹出式的菜单选择）
+ 
+ 
+ NSMutableArray *obj = [NSMutableArray array];
+ 
+ NSArray *titles = @[@"扫一扫",
+ @"加好友",
+ @"创建讨论组",
+ @"发送到电脑",
+ @"面对面快传",
+ @"收钱"];
+ 
+ for (NSInteger i = 0; i < [self titles].count; i++) {
+ PopMenuModel * info = [PopMenuModel new];
+ info.title = titles[i];
+ [obj addObject:info];
+ }
+ //创建显示和点击回调
+ [[PopMenuViewSingleton sharePopMenuViewSingleton]showPopMenuSelecteWithFrame:CGSizeMake(150, 200)
+ item:obj
+ action:^(NSIndexPath *indexPath) {
+ NSLog(@"index:%ld",(long)indexPath.row);
+ 
+ } from:btn];
+ 
+ 
+ */
+
+
 @interface PopMenuView : UIView
 
 @property(nonatomic , assign)CGSize menuSize;

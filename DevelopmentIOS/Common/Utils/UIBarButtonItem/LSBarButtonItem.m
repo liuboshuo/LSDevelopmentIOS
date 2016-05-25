@@ -68,7 +68,7 @@
         [btn setImage:[UIImage imageNamed:image] forState:UIControlStateNormal];
     }
     btn.frame = CGRectMake(0, 0, 44, 44);
-    btn.imageEdgeInsets = UIEdgeInsetsMake(0, 30, 0, 0);
+    btn.imageEdgeInsets = UIEdgeInsetsMake(0, 10, 0, 0);
     [btn addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     LSBarButtonItem *item = [[LSBarButtonItem alloc] initWithCustomView:btn];
     

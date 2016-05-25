@@ -11,6 +11,13 @@
 
 #define SingleDownLoadCount 3
 
+
+/**
+ *  _download = [[SingleDownLoadFile alloc] init];
+ _download.downloadUrl = @"http://221.228.17.252:8088/vedio/360.mp4";
+ _download.destinationPath = [LSProjectUtils getCachesFilePathWithFileName:@"2.mp4"];
+ [_download start];
+ */
 @protocol SingleDownLoadFileDelegate <NSObject>
 
 //收到数据时候才调用

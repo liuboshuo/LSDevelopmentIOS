@@ -9,9 +9,17 @@
 #import <Foundation/Foundation.h>
 #import "SingletonTemplate.h"
 #import "LSReachability.h"
+
+/**
+ *
+ //网络改变的回调
+ [[NetWorkTool sharedNetWorkTool].reachability setNotifyBlock:^(LSReachability * _Nullable reachability) {
+ //网络改变的执行代码
+ }];
+ 
+ */
+
 @interface NetWorkTool : NSObject
-
-
 
 singletonInterface(NetWorkTool);
 

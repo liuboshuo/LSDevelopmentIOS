@@ -21,12 +21,17 @@ typedef enum : NSUInteger {
 @class LSAlertView;
 
 
+
+
 @protocol LSAlertViewDelegate<NSObject>
 
 -(void)alertView:(LSAlertView *)alertView didClickWithIndex:(NSUInteger)index type:(LSShowViewModelType)type;
 
 
 @end
+
+
+
 
 typedef void(^alertButtonClick)(LSAlertView *alertView,NSUInteger index, LSShowViewModelType type);
 

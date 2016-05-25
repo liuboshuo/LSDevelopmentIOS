@@ -6,6 +6,17 @@
 //  Copyright © 2016年 liushuo. All rights reserved.
 //
 
+/**
+ *  
+ 
+ [[AdressBookManager sharedAdressBookManager] getAdressBookOfAllPeople:^(NSMutableArray<ABPerson *> *peoples) {
+ }];
+ *
+ *  @param peoples <#peoples description#>
+ *
+ *  @return <#return value description#>
+ */
+
 #import <Foundation/Foundation.h>
 #import <AddressBook/AddressBook.h>
 #import "ABPerson.h"

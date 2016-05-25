@@ -29,9 +29,16 @@
 {
     NSMutableArray *obj = [NSMutableArray array];
     
+    NSArray *titles = @[@"扫一扫",
+                        @"加好友",
+                        @"创建讨论组",
+                        @"发送到电脑",
+                        @"面对面快传",
+                        @"收钱"];
+    
     for (NSInteger i = 0; i < [self titles].count; i++) {
         PopMenuModel * info = [PopMenuModel new];
-        info.title = [self titles][i];
+        info.title = titles[i];
         [obj addObject:info];
     }
     [[PopMenuViewSingleton sharePopMenuViewSingleton]showPopMenuSelecteWithFrame:CGSizeMake(150, 200)

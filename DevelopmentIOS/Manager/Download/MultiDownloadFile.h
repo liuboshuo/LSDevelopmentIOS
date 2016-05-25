@@ -8,6 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
+
+/**
+ *  _downloader = [[MultiDownloadFile alloc] init];
+ _downloader.delegate = self;
+ _downloader.maxCount = 4;
+ _downloader.url = @"http://221.228.17.252:8088/vedio/360.mp4";
+ _downloader.destinationPath = [LSProjectUtils getCachesFilePathWithFileName:@"3.mp4"];
+ [_downloader start];
+ */
 @protocol MultiDownloadFileDelegate <NSObject>
 
 

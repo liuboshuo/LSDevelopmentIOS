@@ -10,9 +10,43 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+/**
+ *
+ 
+ 使用:
+ self.actionSheet = [[ZLPhotoActionSheet alloc] init];
+ _actionSheet.maxPreviewCount = 5;
+ [button1 addBlockForControlEvents:UIControlEventTouchUpInside block:^(id sender) {
+ [_actionSheet showWithSender:self animate:YES completion:^(NSArray<UIImage *> * _Nonnull selectPhotos) {
+ 
+ 
+ [self.containView removeAllSubviews];
+ int rowCount = 3;
+ 
+ CGFloat padding = 10;
+ 
+ CGFloat w = UIScreenWidth / rowCount;
+ CGFloat h = 110;
+ for (int i= 0; i<selectPhotos.count; i++) {
+ UIImageView *imageView = [[UIImageView alloc] initWithImage:selectPhotos[i]];
+ imageView.x = (i % rowCount) * ( padding + w);
+ imageView.width = w;
+ imageView.height = h;
+ imageView.y = (i / rowCount) * (padding + h);
+ [self.containView addSubview:imageView];
+ }
+ 
+ }];
+ }];
+ 
+ */
+
 @interface ZLPhotoActionSheet : UIView
 
 @property (nonatomic, weak) UIViewController *sender;
+
+
+
 
 @property (weak, nonatomic) IBOutlet UIButton *btnCamera;
 @property (weak, nonatomic) IBOutlet UIView *baseView;

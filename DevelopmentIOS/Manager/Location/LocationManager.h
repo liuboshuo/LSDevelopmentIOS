@@ -10,6 +10,22 @@
 #import "SingletonTemplate.h"
 #import <CoreLocation/CoreLocation.h>
 
+/**
+ *  
+ 
+ 定位的使用:
+ 
+ 获取坐标
+ [[LocationManager sharedLocationManager] getLocation:^(CLLocation *location) {
+ //坐标
+ }];
+ 
+ *
+ *  @param location <#location description#>
+ *
+ *  @return <#return value description#>
+ */
+
 typedef void(^locationHandle)(CLLocation *location);
 
 

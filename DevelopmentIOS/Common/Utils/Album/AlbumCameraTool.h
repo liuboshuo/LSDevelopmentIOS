@@ -30,6 +30,19 @@
 
 /**
  *  从底部弹出ActionSheet选择从图库选择图片或者相机拍照图片
+ 
+ 在控制器设置属性
+ [self.albumCameraTool open];
+ 
+ -(AlbumCameraTool *)albumCameraTool
+ {
+ if (!_albumCameraTool) {
+ _albumCameraTool = [[AlbumCameraTool alloc] initWithVc:self];
+ _albumCameraTool .delegate = self;
+ }
+ return _albumCameraTool;
+ }
+ 
  */
 @interface AlbumCameraTool : NSObject
 

@@ -15,7 +15,14 @@
 
 @end
 
-
+/**
+ *
+ 带图片弹出框的使用:
+ 只支持一张本地图片(后期扩张网络图片和多张图片的使用信息)
+ LSAlertView *alertViewTools = [LSAlertViewTools alertViewWithText:@"世纪东方水库附近呢" title:@"测试" animated:YES imageName:@"111" toView:self.view type:LSShowViewModelOk];
+ self.alertView = alertViewTools;
+ self.alertView.delegate = self;
+ */
 /**
  *  创建AlertView  文字 图片
  */

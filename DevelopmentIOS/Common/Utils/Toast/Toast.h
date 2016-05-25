@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+/**
+ *  [Toast showToastWithMessage:@"我是Toast" Length:TOAST_LONG ParentView:self.view];
+ */
 @interface Toast : UIView
 
 typedef NS_ENUM(NSInteger, TOAST_LENGTH) {

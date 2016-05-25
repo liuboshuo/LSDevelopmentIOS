@@ -12,7 +12,7 @@
 @interface LSViewControllerUtils : NSObject
 
 /**
- *  获取活跃的控制器
+ *  获取活跃的控制器（根据不同项目该方法会有所变动，获取当前的控制器也就是呈现在用户的控制器）
  *
  *  @return <#return value description#>
  */

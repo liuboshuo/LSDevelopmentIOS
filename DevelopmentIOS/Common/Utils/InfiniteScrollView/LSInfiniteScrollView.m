@@ -250,7 +250,7 @@
     self.pageControl.frame = CGRectMake(0, ScrollHeight - pageSize, ScrollWidth, 10);
     
     self.leftImageView.frame = CGRectMake(0, 0, ScrollWidth, ScrollHeight);
-    self.leftImageView.frame = CGRectMake(ScrollWidth, 0, ScrollWidth, ScrollHeight);
+    self.centerImageView.frame = CGRectMake(ScrollWidth, 0, ScrollWidth, ScrollHeight);
     self.rightImageView.frame = CGRectMake(ScrollWidth*2, 0, ScrollWidth, ScrollHeight);
     
 }

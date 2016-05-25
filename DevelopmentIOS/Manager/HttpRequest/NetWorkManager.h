@@ -6,6 +6,19 @@
 //  Copyright © 2016年 liushuo. All rights reserved.
 //
 
+
+/**
+ *
+ 网络请求:基于AFNetworking封装
+ [NetWorkManager updateBaseURL:@"http://121.196.228.152:8080"];
+ [NetWorkManager postWithUrl:@"/SCFinance/mobile/product/findFinanceProductList" params:@{@"city":@""} success:^(id response) {
+ NSLog(@"%@",response);
+ } fail:^(NSError *error) {
+ NSLog(@"%@",error);
+ }];
+ */
+
+
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import "SingletonTemplate.h"
@@ -50,6 +63,9 @@ typedef void(^LSResponseSuccess)(id response);
 typedef void(^LSResponseFail)(NSError *error);
 
 @interface NetWorkManager : NSObject
+
+
+
 
 singletonInterface(LSNetWorkManager);
 
