@@ -45,5 +45,5 @@
 #import "PopMenuViewTableViewDelegate.h"
 #import "TTTAttributedLabel.h"
 #import "NotificationHub.h"
-
+#import "LSDownloadManager.h"
 #endif /* Utils_h */
