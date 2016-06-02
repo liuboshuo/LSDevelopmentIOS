@@ -14,6 +14,7 @@
 #import "UIGloablConfig.h"
 #import "UIPropertyConstant.h"
 #import "NavigationController.h"
+#import "CustomTabBarController.h"
 #import "TabBarController.h"
 #import "CommonViewController.h"
 #import "RESideMenu.h"

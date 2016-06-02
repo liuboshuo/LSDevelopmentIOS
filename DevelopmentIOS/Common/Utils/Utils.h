@@ -19,7 +19,6 @@
 #import "NSData+Base64.h"
 #import "ShowBigImageView.h"
 #import "QRCodeView.h"
-#import "LSViewControllerUtils.h"
 #import "OrderedDictionaryOC.h"
 #import "SafeArray.h"
 #import "SafeDictionary.h"
@@ -45,5 +44,6 @@
 #import "PopMenuViewTableViewDelegate.h"
 #import "TTTAttributedLabel.h"
 #import "NotificationHub.h"
-#import "LSDownloadManager.h"
+#import "LSBarButtonItem.h"
+#import "LSViewControllerUtils.h"
 #endif /* Utils_h */

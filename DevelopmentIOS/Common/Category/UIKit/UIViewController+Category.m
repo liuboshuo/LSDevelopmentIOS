@@ -10,7 +10,7 @@
 #import "LSBarButtonItem.h"
 #import <objc/runtime.h>
 
-static const CGFloat currentScrollOffsetY = 600;
+//static const CGFloat currentScrollOffsetY = 600;
 
 @interface UIViewController ()
 
@@ -188,7 +188,6 @@ static const char *hiddenControlOptionKey = "hiddenControlOptionKey";
 }
 
 static CGFloat alpha = 0;
-static CGFloat offset = 0;
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context
 {

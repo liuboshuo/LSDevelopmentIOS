@@ -54,6 +54,6 @@
     [_button setBackgroundColor:[LSSkinMananger colorNamed:@"Btn_text_Color"]];
     [_button setTitleColor:[LSSkinMananger colorNamed:@"Btn_bg_Color"] forState:UIControlStateNormal];
     self.view.backgroundColor = [LSSkinMananger colorNamed:@"Page_color"];
-    [self setTitleColor:[LSSkinMananger colorNamed:@"Nav_title_Color"]];
+    
 }
 @end

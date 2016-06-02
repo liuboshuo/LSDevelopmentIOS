@@ -103,7 +103,7 @@ typedef NS_ENUM(NSUInteger , HiddenControlOption){
 /**
  *  配合ScrollView使用
  */
-- (void)setScrollVew:(UIScrollView *)scrollView scrollOffsetY:(CGFloat)scrollOffsetY options:(HiddenControlOption)options;
+- (void)setScrollVew:(nullable UIScrollView *)scrollView scrollOffsetY:(CGFloat)scrollOffsetY options:(HiddenControlOption)options;
 
 - (void)setInViewWillAppear;
 - (void)setInViewWillDisappear;

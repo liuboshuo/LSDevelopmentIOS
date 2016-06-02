@@ -26,7 +26,7 @@
  *  @return <#return value description#>
  */
 +(UIColor *)configNavigationBar;
-+(UIColor *)configNavigationBarWithColor:(UIColor *)color;
++(UIColor *)configNavigationBarWithColor:(UIColor *)color title:(UIColor *)title;
 
 /**
  *  配置tableView
@@ -52,4 +52,8 @@
 +(UIColor *)configTabBar;
 +(UIColor *)configTabBarWithColor:(UIColor *)color;
 
+
+
++(UIColor *)getCustomNormal;
++(UIColor  *)getCustomSelected;
 @end

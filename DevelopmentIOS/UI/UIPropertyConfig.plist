@@ -4,15 +4,21 @@
 <dict>
 	<key>GlobalUITheme</key>
 	<string>200,70,100,1.0</string>
+	<key>NavTitleColor</key>
+	<string>255,255,255,1.0</string>
+	<key>CustomTabBarNormalTitleColor</key>
+	<string>130,130,130,1.0</string>
+	<key>CustomTabBarSelectedTitleColor</key>
+	<string>200,70,100,1.0</string>
 	<key>TabBarUi</key>
 	<array>
 		<dict>
 			<key>controller</key>
 			<string>LSFirstViewController</string>
 			<key>normalImage</key>
-			<string></string>
+			<string>icon_nav_sel</string>
 			<key>selectImage</key>
-			<string></string>
+			<string>icon_nav_sel_on</string>
 			<key>title</key>
 			<string>首页</string>
 		</dict>
@@ -20,9 +26,9 @@
 			<key>controller</key>
 			<string>LSSecondViewController</string>
 			<key>normalImage</key>
-			<string></string>
+			<string>icon_nav_account</string>
 			<key>selectImage</key>
-			<string></string>
+			<string>icon_nav_account_on</string>
 			<key>title</key>
 			<string>第二</string>
 		</dict>

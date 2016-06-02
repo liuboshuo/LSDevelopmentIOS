@@ -37,8 +37,6 @@
 
 @property(nonatomic , strong)NSMutableArray *datas;
 
-
-
 @end
 
 @implementation RootViewController

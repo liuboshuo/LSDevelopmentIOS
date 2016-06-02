@@ -25,13 +25,13 @@
     }
     return self;
 }
-
-
 -(void)setTitle:(NSString *)title
 {
     [super setTitle:title];
     
-    [self setTitleColor:[LSSkinMananger colorNamed:@"Nav_title_Color"]];
+    if ([LSSkinMananger isUseSKin]) {
+        [self setTitleColor:[LSSkinMananger colorNamed:@"Nav_title_Color"]];
+    }
 }
 
 -(void)setBackBarButtonItemWithTitle:(NSString *)text
@@ -86,9 +86,11 @@
 {
     //防止编译器提示，只需在子类重写就OK
 }
+
 - (BOOL)gestureRecognizerShouldBegin {
     return YES;
 }
+
 -(void)setTitleColor:(UIColor *)color
 {
     [self.navigationController.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:color,NSForegroundColorAttributeName,nil]];

@@ -10,6 +10,7 @@
 
 #import "TabBarController.h"
 #import "LSDevelopmetIOS.h"
+#import "UIGloablConfig.h"
 @interface TabBarController ()
 
 
@@ -108,8 +109,6 @@
         
     }
 }
-
-
 -(void)refreshCurrentSkin:(NSNotification *)notification
 {
     [self setSkin];
@@ -117,7 +116,12 @@
 
 -(void)setSkin
 {
-    [self.tabBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
-    self.tabBar.tintColor = [LSSkinMananger colorNamed:@"Tab_title_Color"];
+    if ([LSSkinMananger isUseSKin]) {
+        [self.tabBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
+        self.tabBar.tintColor = [LSSkinMananger colorNamed:@"Tab_title_Color"];
+    }else{
+        [UIGloablConfig configTabBar];
+    }
+    
 }
 @end

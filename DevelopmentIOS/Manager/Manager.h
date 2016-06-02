@@ -16,5 +16,7 @@
 #import "MultiDownloadFile.h"
 #import "SingleDownLoadFile.h"
 #import "CopyFile.h"
+#import "LSDownloadManager.h"
+#import "AdressBookManager.h"
 
 #endif /* Manager_h */

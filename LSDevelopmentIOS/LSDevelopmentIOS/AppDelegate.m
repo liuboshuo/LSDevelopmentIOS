@@ -23,11 +23,9 @@
     
     [[LSSkinMananger sharedLSSkinMananger] initSkinSetting:YES];
     
-    //    TabBarController *tab = [[TabBarController alloc] init];
-    
-    
-    RootViewController *rootViweController = [[RootViewController alloc] init];
-    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViweController];
+    CustomTabBarController *tab = [[CustomTabBarController alloc] init];
+    //    RootViewController *rootViweController = [[RootViewController alloc] init];
+    //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:rootViweController];
     CGFloat screenW = [UIScreen mainScreen].bounds.size.width;
     CGFloat scrrenH = [UIScreen mainScreen].bounds.size.height;
     self.window = [[UIWindow alloc] initWithFrame:CGRectMake(0, 0, screenW, scrrenH)];
@@ -35,7 +33,7 @@
     
     [self.window makeKeyAndVisible];
     
-    self.window.rootViewController = nav;
+    self.window.rootViewController = tab;
     
     return YES;
 }

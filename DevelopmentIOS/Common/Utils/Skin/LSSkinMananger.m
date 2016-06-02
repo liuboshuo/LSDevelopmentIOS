@@ -35,7 +35,6 @@ singletonImplementation(LSSkinMananger);
         }
     }
 }
-
 -(void)setCurrentSkinType:(LSSkinManangerType)currentSkinType
 {
     _currentSkinType = currentSkinType;
@@ -101,5 +100,9 @@ singletonImplementation(LSSkinMananger);
     }
     
     return nil;
+}
++(BOOL)isUseSKin
+{
+    return _isUseSkinManager;
 }
 @end

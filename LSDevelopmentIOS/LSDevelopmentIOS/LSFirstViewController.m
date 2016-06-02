@@ -92,10 +92,7 @@
     
     [self.button0 setTitleColor:[LSSkinMananger colorNamed:@"Btn_bg_Color"] forState:UIControlStateNormal];
     [self.button0 setBackgroundColor:[LSSkinMananger colorNamed:@"Btn_text_Color"]];
-    
     self.view.backgroundColor = [LSSkinMananger colorNamed:@"Page_color"];
-    
-    [self setTitleColor:[LSSkinMananger colorNamed:@"Nav_title_Color"]];
     
     if (notification) {
         self.sideMenuViewController.backgroundImage = [UIImage imageWithColor:[UIColor purpleColor]];

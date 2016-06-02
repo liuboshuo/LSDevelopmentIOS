@@ -78,6 +78,39 @@ static const void *HttpRequestHUDKey = &HttpRequestHUDKey;
     [UserDefaults setObject:nil forKey:key];
     [UserDefaults synchronize];
 }
+
++(NSString *)createDocumentFile:(NSString *)fileName
+{
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *file = [path stringByAppendingPathComponent:fileName];
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    if (![mgr fileExistsAtPath:file]) {
+        [mgr createFileAtPath:file contents:nil attributes:nil];
+    }
+    return file;
+}
+
++(NSString *)createCacheFile:(NSString *)fileName
+{
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *file = [path stringByAppendingPathComponent:fileName];
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    if (![mgr fileExistsAtPath:file]) {
+        [mgr createFileAtPath:file contents:nil attributes:nil];
+    }
+    return file;
+}
++(NSString *)createLibraryFile:(NSString *)fileName
+{
+    NSString *path = [NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES) firstObject];
+    NSString *file = [path stringByAppendingPathComponent:fileName];
+    NSFileManager *mgr = [NSFileManager defaultManager];
+    if (![mgr fileExistsAtPath:file]) {
+        [mgr createFileAtPath:file contents:nil attributes:nil];
+    }
+    return file;
+}
+
 +(NSString *)getDocumentsFilePathWithFileName:(NSString *)name
 {
     return [[UIApplication sharedApplication].documentsPath stringByAppendingPathComponent:name];

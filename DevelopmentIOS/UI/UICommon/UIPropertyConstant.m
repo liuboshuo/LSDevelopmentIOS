@@ -17,7 +17,9 @@ NSString *const LSUIPropertyConfigFile = @"UIPropertyConfig.plist";
 
 //全局主题
 NSString *const LSUIGloablTheme = @"GlobalUITheme";
-
+NSString *const NavTitleColor = @"NavTitleColor";
+NSString *const LSCustomTabBarNormalTitleColor = @"CustomTabBarNormalTitleColor";
+NSString *const LSCustomTabBarSelectedTitleColor = @"CustomTabBarSelectedTitleColor";
 //全局框架
 NSString *const LSUITabBarUI = @"TabBarUi";
 

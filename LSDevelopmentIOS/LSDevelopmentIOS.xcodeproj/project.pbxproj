@@ -54,6 +54,10 @@
 		88A403191CC0970D00B6A5F1 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403181CC0970D00B6A5F1 /* ChineseToPinyin.m */; };
 		88A4031B1CC0AE4E00B6A5F1 /* 111.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A4031A1CC0AE4D00B6A5F1 /* 111.png */; };
 		88A403231CC0DB2B00B6A5F1 /* ScrollViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403221CC0DB2B00B6A5F1 /* ScrollViewTest.m */; };
+		88A983631CFEAA6700C57188 /* icon_nav_account_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A9835F1CFEAA6700C57188 /* icon_nav_account_on@2x.png */; };
+		88A983641CFEAA6700C57188 /* icon_nav_account@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A983601CFEAA6700C57188 /* icon_nav_account@2x.png */; };
+		88A983651CFEAA6700C57188 /* icon_nav_sel_on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A983611CFEAA6700C57188 /* icon_nav_sel_on@2x.png */; };
+		88A983661CFEAA6700C57188 /* icon_nav_sel@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 88A983621CFEAA6700C57188 /* icon_nav_sel@2x.png */; };
 		88AC30D31CE5D28500E4B308 /* LSDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC30D01CE5D28500E4B308 /* LSDownloadManager.m */; };
 		88AC30D41CE5D28500E4B308 /* SessionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88AC30D21CE5D28500E4B308 /* SessionModel.m */; };
 		88BD48721C93A80700DB47E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 88BD48711C93A80700DB47E4 /* main.m */; };
@@ -83,6 +87,9 @@
 		88D454291CBF9DA600E05A5D /* HUDAndToastTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D454281CBF9DA600E05A5D /* HUDAndToastTest.m */; };
 		88D4542D1CBFA05A00E05A5D /* Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D4542C1CBFA05A00E05A5D /* Toast.m */; };
 		88D454311CBFA19000E05A5D /* LSNetWorkStatusTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88D454301CBFA19000E05A5D /* LSNetWorkStatusTest.m */; };
+		88DB07041CFE7DF900C720D6 /* CustomTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DB07031CFE7DF900C720D6 /* CustomTabBarController.m */; };
+		88DB07071CFE800E00C720D6 /* LSTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 88DB07061CFE800E00C720D6 /* LSTabBarItem.m */; };
+		88DB071D1CFE816E00C720D6 /* TabBarImages.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 88DB071C1CFE816E00C720D6 /* TabBarImages.bundle */; };
 		88E044181CCF01B40078CC4D /* NotificationHub.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E044171CCF01B40078CC4D /* NotificationHub.m */; };
 		88E0441C1CCF05DC0078CC4D /* NotificationHubCountTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88E0441B1CCF05DC0078CC4D /* NotificationHubCountTest.m */; };
 		88EBEDD91CBCDEFA001EC50F /* Foundation+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED051CBCDEFA001EC50F /* Foundation+Log.m */; };
@@ -290,6 +297,10 @@
 		88A4031A1CC0AE4D00B6A5F1 /* 111.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 111.png; sourceTree = "<group>"; };
 		88A403211CC0DB2B00B6A5F1 /* ScrollViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollViewTest.h; sourceTree = "<group>"; };
 		88A403221CC0DB2B00B6A5F1 /* ScrollViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollViewTest.m; sourceTree = "<group>"; };
+		88A9835F1CFEAA6700C57188 /* icon_nav_account_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_nav_account_on@2x.png"; sourceTree = "<group>"; };
+		88A983601CFEAA6700C57188 /* icon_nav_account@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_nav_account@2x.png"; sourceTree = "<group>"; };
+		88A983611CFEAA6700C57188 /* icon_nav_sel_on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_nav_sel_on@2x.png"; sourceTree = "<group>"; };
+		88A983621CFEAA6700C57188 /* icon_nav_sel@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_nav_sel@2x.png"; sourceTree = "<group>"; };
 		88AC30CF1CE5D28500E4B308 /* LSDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSDownloadManager.h; sourceTree = "<group>"; };
 		88AC30D01CE5D28500E4B308 /* LSDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSDownloadManager.m; sourceTree = "<group>"; };
 		88AC30D11CE5D28500E4B308 /* SessionModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SessionModel.h; sourceTree = "<group>"; };
@@ -346,6 +357,11 @@
 		88D4542C1CBFA05A00E05A5D /* Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Toast.m; sourceTree = "<group>"; };
 		88D4542F1CBFA19000E05A5D /* LSNetWorkStatusTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSNetWorkStatusTest.h; sourceTree = "<group>"; };
 		88D454301CBFA19000E05A5D /* LSNetWorkStatusTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSNetWorkStatusTest.m; sourceTree = "<group>"; };
+		88DB07021CFE7DF900C720D6 /* CustomTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTabBarController.h; sourceTree = "<group>"; };
+		88DB07031CFE7DF900C720D6 /* CustomTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarController.m; sourceTree = "<group>"; };
+		88DB07051CFE800E00C720D6 /* LSTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTabBarItem.h; sourceTree = "<group>"; };
+		88DB07061CFE800E00C720D6 /* LSTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTabBarItem.m; sourceTree = "<group>"; };
+		88DB071C1CFE816E00C720D6 /* TabBarImages.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TabBarImages.bundle; sourceTree = "<group>"; };
 		88E044161CCF01B40078CC4D /* NotificationHub.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHub.h; sourceTree = "<group>"; };
 		88E044171CCF01B40078CC4D /* NotificationHub.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationHub.m; sourceTree = "<group>"; };
 		88E0441A1CCF05DC0078CC4D /* NotificationHubCountTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationHubCountTest.h; sourceTree = "<group>"; };
@@ -811,6 +827,17 @@
 			name = ScrollView;
 			sourceTree = "<group>";
 		};
+		88A9835E1CFEAA5C00C57188 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				88A9835F1CFEAA6700C57188 /* icon_nav_account_on@2x.png */,
+				88A983601CFEAA6700C57188 /* icon_nav_account@2x.png */,
+				88A983611CFEAA6700C57188 /* icon_nav_sel_on@2x.png */,
+				88A983621CFEAA6700C57188 /* icon_nav_sel@2x.png */,
+			);
+			name = image;
+			sourceTree = "<group>";
+		};
 		88AC30CE1CE5D28500E4B308 /* DownloadManager */ = {
 			isa = PBXGroup;
 			children = (
@@ -902,6 +929,7 @@
 		88D453F61CBF43C300E05A5D /* SkinAndDrewer */ = {
 			isa = PBXGroup;
 			children = (
+				88A9835E1CFEAA5C00C57188 /* image */,
 				887B71FD1CBCD9270055615C /* LSFirstViewController.h */,
 				887B71FE1CBCD9270055615C /* LSFirstViewController.m */,
 				887B71FF1CBCD9270055615C /* LSSecondViewController.h */,
@@ -994,6 +1022,18 @@
 				88D454301CBFA19000E05A5D /* LSNetWorkStatusTest.m */,
 			);
 			name = NetWorkStatus;
+			sourceTree = "<group>";
+		};
+		88DB07011CFE7DE800C720D6 /* CustomTabBarUI */ = {
+			isa = PBXGroup;
+			children = (
+				88DB071C1CFE816E00C720D6 /* TabBarImages.bundle */,
+				88DB07021CFE7DF900C720D6 /* CustomTabBarController.h */,
+				88DB07031CFE7DF900C720D6 /* CustomTabBarController.m */,
+				88DB07051CFE800E00C720D6 /* LSTabBarItem.h */,
+				88DB07061CFE800E00C720D6 /* LSTabBarItem.m */,
+			);
+			path = CustomTabBarUI;
 			sourceTree = "<group>";
 		};
 		88E044151CCF01900078CC4D /* NotificationHubCount */ = {
@@ -1439,7 +1479,7 @@
 		88EBEDC31CBCDEFA001EC50F /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				88EBEDC41CBCDEFA001EC50F /* CustomTabBarUI */,
+				88DB07011CFE7DE800C720D6 /* CustomTabBarUI */,
 				88EBEDC51CBCDEFA001EC50F /* NormalDrawerUI */,
 				88EBEDC61CBCDEFA001EC50F /* NormalTabBarUI */,
 				88EBEDD01CBCDEFA001EC50F /* UI.h */,
@@ -1447,13 +1487,6 @@
 				88EBEDD81CBCDEFA001EC50F /* UIPropertyConfig.plist */,
 			);
 			path = UI;
-			sourceTree = "<group>";
-		};
-		88EBEDC41CBCDEFA001EC50F /* CustomTabBarUI */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CustomTabBarUI;
 			sourceTree = "<group>";
 		};
 		88EBEDC51CBCDEFA001EC50F /* NormalDrawerUI */ = {
@@ -1629,6 +1662,7 @@
 				88EBEE331CBCDEFA001EC50F /* ZLThumbnailViewController.xib in Resources */,
 				88D454191CBF734200E05A5D /* sound.m4a in Resources */,
 				88EBEE131CBCDEFA001EC50F /* SkinAllColor.strings in Resources */,
+				88A983661CFEAA6700C57188 /* icon_nav_sel@2x.png in Resources */,
 				88EBEE3D1CBCDEFA001EC50F /* UIPropertyConfig.plist in Resources */,
 				88EBEE211CBCDEFA001EC50F /* btn_selected@3x.png in Resources */,
 				88EBEE031CBCDEFA001EC50F /* scan_3@2x.png in Resources */,
@@ -1642,10 +1676,12 @@
 				88BD487B1C93A80800DB47E4 /* Main.storyboard in Resources */,
 				88EBEE271CBCDEFA001EC50F /* navBackBtn@2x.png in Resources */,
 				88EBEE201CBCDEFA001EC50F /* btn_selected@2x.png in Resources */,
+				88A983641CFEAA6700C57188 /* icon_nav_account@2x.png in Resources */,
 				88EBEE1E1CBCDEFA001EC50F /* btn_circle@3x.png in Resources */,
 				88EBEE0A1CBCDEFA001EC50F /* nav_back_white@2x.png in Resources */,
 				88EBEE361CBCDEFA001EC50F /* biaoqing@2x.png in Resources */,
 				88D4541B1CBF765F00E05A5D /* music.mp3 in Resources */,
+				88A983631CFEAA6700C57188 /* icon_nav_account_on@2x.png in Resources */,
 				88EBEE241CBCDEFA001EC50F /* btn_unselected@3x.png in Resources */,
 				88EBEE3F1CBCDF1A001EC50F /* switch_night in Resources */,
 				88EBEE011CBCDEFA001EC50F /* scan_1@2x.png in Resources */,
@@ -1654,10 +1690,12 @@
 				88EBEE021CBCDEFA001EC50F /* scan_2@2x.png in Resources */,
 				88EBEE111CBCDEFA001EC50F /* ManagerPropertyConfig.plist in Resources */,
 				885FA0821CCA693700F29A95 /* cc_webview_back.png in Resources */,
+				88DB071D1CFE816E00C720D6 /* TabBarImages.bundle in Resources */,
 				88EBEE191CBCDEFA001EC50F /* ZLBigImageCell.xib in Resources */,
 				88EBEE2D1CBCDEFA001EC50F /* ZLPhotoActionSheet.xib in Resources */,
 				88832F011CC3454A00FD509A /* Readme.txt in Resources */,
 				88EBEE051CBCDEFA001EC50F /* scan_net@2x.png in Resources */,
+				88A983651CFEAA6700C57188 /* icon_nav_sel_on@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1828,6 +1866,7 @@
 				88EBEE321CBCDEFA001EC50F /* ZLThumbnailViewController.m in Sources */,
 				88A403231CC0DB2B00B6A5F1 /* ScrollViewTest.m in Sources */,
 				88EBEDEF1CBCDEFA001EC50F /* UIView+Extension.m in Sources */,
+				88DB07071CFE800E00C720D6 /* LSTabBarItem.m in Sources */,
 				88D454171CBF6FC300E05A5D /* PlaySoundAndMusicTest.m in Sources */,
 				88AC30D31CE5D28500E4B308 /* LSDownloadManager.m in Sources */,
 				886DD1161CC4AA65004D2A0D /* ProgressView.m in Sources */,
@@ -1855,6 +1894,7 @@
 				88925AF81CC5BFB80016D778 /* PopMenuViewTest.m in Sources */,
 				88EBEE3A1CBCDEFA001EC50F /* ErrorView.m in Sources */,
 				88832EFA1CC3448A00FD509A /* mztools.c in Sources */,
+				88DB07041CFE7DF900C720D6 /* CustomTabBarController.m in Sources */,
 				887DE8581CBF29C400834BEC /* SWUtilityButtonView.m in Sources */,
 				88EBEDFB1CBCDEFA001EC50F /* SafeDictionary.m in Sources */,
 				88EBEE091CBCDEFA001EC50F /* LSDispatchQueuePool.m in Sources */,
@@ -2001,11 +2041,13 @@
 			baseConfigurationReference = 74B5A64145BA2CEB07E440DA /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMPRESS_PNG_FILES = NO;
 				INFOPLIST_FILE = LSDevelopmentIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liushuo.quick.LSDevelopmentIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
@@ -2015,11 +2057,13 @@
 			baseConfigurationReference = 8BF5775479448C9085D7D0A6 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMPRESS_PNG_FILES = NO;
 				INFOPLIST_FILE = LSDevelopmentIOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.liushuo.quick.LSDevelopmentIOS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_PNG_TEXT = NO;
 				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;

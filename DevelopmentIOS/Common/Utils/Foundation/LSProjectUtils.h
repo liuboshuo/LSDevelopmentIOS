@@ -99,6 +99,32 @@
 + (NSMutableDictionary *) getFileInfo:(NSString *)fileName;
 
 /**
+ *  document文件夹创建文件
+ *
+ *  @param fileName 文件名
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)createDocumentFile:(NSString *)fileName;
+/**
+ *  caches目录下创建文件类型
+ *
+ *  @param fileName 文件名
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)createCacheFile:(NSString *)fileName;
+
+/**
+ *  librar创建文件
+ *
+ *  @param fileName 文件名
+ *
+ *  @return <#return value description#>
+ */
++(NSString *)createLibraryFile:(NSString *)fileName;
+
+/**
  *  根据当前日期创建文件名称
  *
  *  @param strExtension 后缀类型

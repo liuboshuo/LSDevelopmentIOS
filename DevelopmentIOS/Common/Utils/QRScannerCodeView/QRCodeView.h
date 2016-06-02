@@ -39,7 +39,6 @@
  *  回复动画
  */
 -(void)resumeAnimation;
-
 /**
  *  开始扫描
  */

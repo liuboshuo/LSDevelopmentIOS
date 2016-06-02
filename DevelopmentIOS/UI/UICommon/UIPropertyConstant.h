@@ -59,7 +59,9 @@ extern NSString *const LSUIPropertyConfigFile;
 
 //全局颜色
 extern NSString *const LSUIGloablTheme;
-
+extern NSString *const NavTitleColor;
+extern NSString *const LSCustomTabBarNormalTitleColor;
+extern NSString *const LSCustomTabBarSelectedTitleColor;
 //对应的Tab的key
 extern NSString *const LSUITabBarUI;
 

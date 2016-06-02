@@ -20,7 +20,7 @@
 {
     NSDictionary *propertyConfigDictionary = [self getConfigs];
     
-    NSString *colorS = propertyConfigDictionary[LSUIGloablTheme];
+    NSString *colorS = propertyConfigDictionary[key];
     if (colorS) {
         NSArray *colors = [colorS componentsSeparatedByString:@","];
         if (colors.count >= 4) {
@@ -63,9 +63,7 @@
     if (color == nil) {
         return nil;
     }
-    
-    [self configNavigationBarWithColor:color];
-    
+    [self configNavigationBarWithColor:color title:[self getColorWithKey:NavTitleColor]];
     [self configTabBarWithColor:color];
     
     [self configTableViewWithColor:color];
@@ -77,19 +75,20 @@
 +(UIColor *)configNavigationBar
 {
     //获取配置文件的主题颜色
-    
     UIColor *globalColor = [self getColorWithKey:LSUIGloablTheme];
+    UIColor *title = [self getColorWithKey:NavTitleColor];
+    
     //判断是否为空，若有空设置主体颜色，不为空不设置主体颜色
     if (globalColor) {
         
         //返回颜色
-        return [self configNavigationBarWithColor:globalColor];
+        return [self configNavigationBarWithColor:globalColor title:title];
     }
     return nil;
 }
-+(UIColor *)configNavigationBarWithColor:(UIColor *)color
++(UIColor *)configNavigationBarWithColor:(UIColor *)color title:(UIColor *)title
 {
-    if (color == nil) {
+    if (color == nil || title == nil) {
         return nil;
     }
     [[UINavigationBar appearance] setBarTintColor:color];
@@ -98,7 +97,7 @@
         [[UINavigationBar appearance] setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];
     }
     [UINavigationBar appearance].barStyle = UIBarStyleBlack;
-    [UINavigationBar appearance].tintColor = [UIColor whiteColor];
+    [UINavigationBar appearance].tintColor = title;
     [UINavigationBar appearance].shadowImage = [[UIImage alloc] init];
     return color;
 }
@@ -160,5 +159,14 @@
     }
     [UISearchBar appearance].tintColor = color;
     return color;
+}
+
++(UIColor *)getCustomNormal
+{
+    return [UIGloablConfig getColorWithKey:LSCustomTabBarNormalTitleColor];
+}
++(UIColor *)getCustomSelected
+{
+    return [UIGloablConfig getColorWithKey:LSCustomTabBarSelectedTitleColor];
 }
 @end

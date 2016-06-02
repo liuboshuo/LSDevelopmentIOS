@@ -9,8 +9,10 @@
 
 #import "NavigationController.h"
 #import "LSDevelopmetIOS.h"
-
-@interface NavigationController ()
+#import "UIGloablConfig.h"
+#import "CustomTabBarController.h"
+#import "TabBarController.h"
+@interface NavigationController ()<UINavigationControllerDelegate>
 
 @property(nonatomic , assign)BOOL enableRightGesture;
 
@@ -25,7 +27,7 @@
     
     self.enableRightGesture = YES;
     self.interactivePopGestureRecognizer.delegate = self;
-    
+    self.delegate = self;
     
     [NotificationCenter addObserver:self selector:@selector(refreshCurrentSkin:) name:LSNotificationRefreshAllSkin object:nil];
     [self setSkin];
@@ -39,7 +41,14 @@
 {
     //如果大于一隐藏底部选项卡
     if (self.viewControllers.count) {
-        viewController.hidesBottomBarWhenPushed = YES;
+        if ([self.parentViewController isKindOfClass:[TabBarController class]]) {
+            viewController.hidesBottomBarWhenPushed = YES;
+        }else if ([self.parentViewController isKindOfClass:[CustomTabBarController class]]) {
+            CustomTabBarController *tab = (CustomTabBarController *)self.parentViewController;
+            if (self.viewControllers.count == 1) {
+                [tab hidesBottomBarWhenPushed:YES];
+            }
+        }
         //        viewController.navigationItem.backBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"" style:UIBarButtonItemStylePlain target:nil action:nil];
     }
     
@@ -59,10 +68,17 @@
 -(UIViewController *)popViewControllerAnimated:(BOOL)animated
 {
     UIViewController *viewController = [super popViewControllerAnimated:animated];
-    
     return viewController;
 }
-
+-(void)navigationController:(UINavigationController *)navigationController didShowViewController:(UIViewController *)viewController animated:(BOOL)animated
+{
+    if ([self.parentViewController isKindOfClass:[CustomTabBarController class]]) {
+        CustomTabBarController *tab = (CustomTabBarController *)self.parentViewController;
+        if (self.viewControllers.count == 1){
+            [tab hidesBottomBarWhenPushed:NO];
+        }
+    }
+}
 -(void)refreshCurrentSkin:(NSNotification *)notification
 {
     [self setSkin];
@@ -81,8 +97,13 @@
 //}
 -(void)setSkin
 {
-    [self.navigationBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
-    self.navigationBar.tintColor = [LSSkinMananger colorNamed:@"Nav_title_Color"];
+    if ([LSSkinMananger isUseSKin]) {
+        [self.navigationBar setBarTintColor:[LSSkinMananger colorNamed:@"Nav_bg_Color"]];
+        self.navigationBar.tintColor = [LSSkinMananger colorNamed:@"Nav_title_Color"];
+        [self.navigationBar setTitleTextAttributes:[NSDictionary dictionaryWithObjectsAndKeys:[LSSkinMananger colorNamed:@"Nav_title_Color"],NSForegroundColorAttributeName,nil]];
+    }else{
+        [UIGloablConfig configNavigationBar];
+    }
     if ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0) {
         self.navigationBar.translucent = NO;
         [self.navigationBar setBackgroundImage:[UIImage new] forBarPosition:UIBarPositionAny barMetrics:UIBarMetricsDefault];

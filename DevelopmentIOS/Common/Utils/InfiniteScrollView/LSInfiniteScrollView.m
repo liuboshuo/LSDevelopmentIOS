@@ -98,7 +98,7 @@
     
     scrollView.delegate = self;
     scrollView.contentSize = CGSizeMake(ScrollWidth * 3, 0);
-    _autoScrollDelay = 0;
+    _autoScrollDelay = 3;
     
     _currentIndex = 0;
     

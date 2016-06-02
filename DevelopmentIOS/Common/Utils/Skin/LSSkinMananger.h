@@ -51,5 +51,12 @@ singletonInterface(LSSkinMananger);
  *  @return <#return value description#>
  */
 +(UIColor *)colorNamed:(NSString *)name;
+/**
+ *  使用皮肤
+ *
+ *  @return <#return value description#>
+ */
++(BOOL)isUseSKin;
+
 
 @end
