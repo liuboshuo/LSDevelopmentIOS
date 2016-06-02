@@ -78,16 +78,16 @@
       
       NormalTabBarUI: (利用系统的UITabBar,和UINavigation搭建的界面)只需要在UIPropertyCOnfig.plist 配置TabBarUi即可
       
-      CustomTabUI:(待完成)
+      CustomTabUI: 自定义UITabBarController和导航的效果，无特殊需求建议使用系统的UITabBar即可
       
-      NormalDrawerUI:
+      NormalDrawerUI: 抽屉效果
       
 Demo:
   
   测试Demo不是很完善
   
   
-  谢谢大家！
+  谢谢大家！欢迎修改Bug,不要记得给赞啊
       
         
         
