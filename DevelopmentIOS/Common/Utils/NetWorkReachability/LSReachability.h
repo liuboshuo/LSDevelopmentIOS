@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import <SystemConfiguration/SystemConfiguration.h>
 #import <netinet/in.h>
+#import <netinet6/in6.h>
+
 
 typedef NS_ENUM(NSUInteger , LSReachabilityStatus){
     LSReachabilityStatusNone = 0,
@@ -45,16 +47,14 @@ typedef NS_ENUM(NSUInteger , LSReachabilityWWANStatus) {
  *
  *  @return <#return value description#>
  */
-+(instancetype)reachability;
++(nullable instancetype)reachability;
 /**
  *  判断wifi连接成功
  *
  *  @return <#return value description#>
  */
-+(instancetype)reachabilityForLocalWifi;
++(nullable instancetype)reachabilityForLocalWifi;
 +(nullable instancetype)reachabilityWithHostname:(NSString *)hostname;
-+(nullable instancetype)reachabilityWithAdress:(const struct sockaddr_in *)hostadress;
-
 
 
 @end

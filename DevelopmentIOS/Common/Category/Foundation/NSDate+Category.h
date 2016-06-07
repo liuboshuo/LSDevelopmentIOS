@@ -186,5 +186,5 @@
  *
  *  @return <#return value description#>
  */
-+ (nullable NSDate *)dateWithISOFormatString:(NSString *)dateString;
++ (nullable NSDate *)dateWithISOFormatString:(nullable NSString *)dateString;
 @end

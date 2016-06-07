@@ -11,7 +11,7 @@
 @interface NSObject (Category)<NSCoding>
 
 
-@property(nonatomic , strong)NSDictionary *userInfo;
+@property(nullable , nonatomic , strong)NSDictionary *userInfo;
 /**
  *  对象的名称
  *
@@ -32,7 +32,7 @@
  *  @param keyPath 观察的键值对
  *  @param block   执行的Block
  */
--(void)addObserverBlockForKeyPath:(nullable NSString *)keyPath block:(void (^) (id _Nonnull obj , _Nullable id oldValue , _Nullable id newValue))block;
+-(void)addObserverBlockForKeyPath:(nullable NSString *)keyPath block:(void (^ _Nonnull) (_Nonnull id  obj , _Nullable id oldValue , _Nullable id newValue))block;
 /**
  *  移除KVO
  *

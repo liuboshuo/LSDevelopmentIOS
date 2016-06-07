@@ -47,11 +47,6 @@
  */
 @property (nonatomic, readonly, nullable) NSDate *systemUptime;
 
-
-
-@property (nullable, nonatomic, readonly) NSString *ipAddressWIFI;
-
-@property (nullable, nonatomic, readonly) NSString *ipAddressCell;
 /**
  *  物理存储
  */

@@ -49,6 +49,8 @@
 		88925AF31CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AEC1CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m */; };
 		88925AF41CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AEE1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m */; };
 		88925AF81CC5BFB80016D778 /* PopMenuViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 88925AF71CC5BFB80016D778 /* PopMenuViewTest.m */; };
+		88950EB91D0689D6002B193D /* LSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 88950EB61D0689D6002B193D /* LSReachability.m */; };
+		88950EBA1D0689D6002B193D /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 88950EB81D0689D6002B193D /* NetWorkTool.m */; };
 		88A403121CC07BF100B6A5F1 /* AdressBookManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403111CC07BF100B6A5F1 /* AdressBookManager.m */; };
 		88A403151CC0839400B6A5F1 /* ABPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403141CC0839400B6A5F1 /* ABPerson.m */; };
 		88A403191CC0970D00B6A5F1 /* ChineseToPinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = 88A403181CC0970D00B6A5F1 /* ChineseToPinyin.m */; };
@@ -126,8 +128,6 @@
 		88EBEDF91CBCDEFA001EC50F /* OrderedDictionaryOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED4D1CBCDEFA001EC50F /* OrderedDictionaryOC.m */; };
 		88EBEDFA1CBCDEFA001EC50F /* SafeArray.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED4F1CBCDEFA001EC50F /* SafeArray.m */; };
 		88EBEDFB1CBCDEFA001EC50F /* SafeDictionary.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED511CBCDEFA001EC50F /* SafeDictionary.m */; };
-		88EBEDFC1CBCDEFA001EC50F /* LSReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED541CBCDEFA001EC50F /* LSReachability.m */; };
-		88EBEDFD1CBCDEFA001EC50F /* NetWorkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED561CBCDEFA001EC50F /* NetWorkTool.m */; };
 		88EBEDFE1CBCDEFA001EC50F /* SizeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED5A1CBCDEFA001EC50F /* SizeTool.m */; };
 		88EBEDFF1CBCDEFA001EC50F /* YYKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED5C1CBCDEFA001EC50F /* YYKeychain.m */; };
 		88EBEE001CBCDEFA001EC50F /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 88EBED5E1CBCDEFA001EC50F /* YYWeakProxy.m */; };
@@ -288,6 +288,10 @@
 		88925AEE1CC5BEEF0016D778 /* PopMenuViewTableViewDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewTableViewDelegate.m; sourceTree = "<group>"; };
 		88925AF61CC5BFB80016D778 /* PopMenuViewTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopMenuViewTest.h; sourceTree = "<group>"; };
 		88925AF71CC5BFB80016D778 /* PopMenuViewTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopMenuViewTest.m; sourceTree = "<group>"; };
+		88950EB51D0689D6002B193D /* LSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSReachability.h; sourceTree = "<group>"; };
+		88950EB61D0689D6002B193D /* LSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSReachability.m; sourceTree = "<group>"; };
+		88950EB71D0689D6002B193D /* NetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
+		88950EB81D0689D6002B193D /* NetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
 		88A403101CC07BF100B6A5F1 /* AdressBookManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdressBookManager.h; sourceTree = "<group>"; };
 		88A403111CC07BF100B6A5F1 /* AdressBookManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdressBookManager.m; sourceTree = "<group>"; };
 		88A403131CC0839400B6A5F1 /* ABPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ABPerson.h; sourceTree = "<group>"; };
@@ -434,10 +438,6 @@
 		88EBED4F1CBCDEFA001EC50F /* SafeArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeArray.m; sourceTree = "<group>"; };
 		88EBED501CBCDEFA001EC50F /* SafeDictionary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SafeDictionary.h; sourceTree = "<group>"; };
 		88EBED511CBCDEFA001EC50F /* SafeDictionary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SafeDictionary.m; sourceTree = "<group>"; };
-		88EBED531CBCDEFA001EC50F /* LSReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSReachability.h; sourceTree = "<group>"; };
-		88EBED541CBCDEFA001EC50F /* LSReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSReachability.m; sourceTree = "<group>"; };
-		88EBED551CBCDEFA001EC50F /* NetWorkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetWorkTool.h; sourceTree = "<group>"; };
-		88EBED561CBCDEFA001EC50F /* NetWorkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetWorkTool.m; sourceTree = "<group>"; };
 		88EBED581CBCDEFA001EC50F /* SingletonTemplate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingletonTemplate.h; sourceTree = "<group>"; };
 		88EBED591CBCDEFA001EC50F /* SizeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SizeTool.h; sourceTree = "<group>"; };
 		88EBED5A1CBCDEFA001EC50F /* SizeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SizeTool.m; sourceTree = "<group>"; };
@@ -787,6 +787,17 @@
 				88925AF71CC5BFB80016D778 /* PopMenuViewTest.m */,
 			);
 			name = PopMenuView;
+			sourceTree = "<group>";
+		};
+		88950EB41D0689D6002B193D /* NetWorkReachability */ = {
+			isa = PBXGroup;
+			children = (
+				88950EB51D0689D6002B193D /* LSReachability.h */,
+				88950EB61D0689D6002B193D /* LSReachability.m */,
+				88950EB71D0689D6002B193D /* NetWorkTool.h */,
+				88950EB81D0689D6002B193D /* NetWorkTool.m */,
+			);
+			path = NetWorkReachability;
 			sourceTree = "<group>";
 		};
 		88A4030F1CC07BD700B6A5F1 /* Contact */ = {
@@ -1165,6 +1176,7 @@
 			children = (
 				88E044151CCF01900078CC4D /* NotificationHubCount */,
 				885FA0871CCA735300F29A95 /* TTTAttributedLabel */,
+				88950EB41D0689D6002B193D /* NetWorkReachability */,
 				885FA07C1CCA693700F29A95 /* WebViewController */,
 				88925AE21CC5BEEF0016D778 /* PopMenuView */,
 				88832EE81CC321BF00FD509A /* ProgressView */,
@@ -1175,7 +1187,6 @@
 				88EBED3F1CBCDEFA001EC50F /* Base64_MD5_AES */,
 				88EBED461CBCDEFA001EC50F /* BigImageView */,
 				88EBED491CBCDEFA001EC50F /* Foundation */,
-				88EBED521CBCDEFA001EC50F /* NetWorkReachability */,
 				88EBED571CBCDEFA001EC50F /* Other */,
 				88EBED5F1CBCDEFA001EC50F /* QRScannerCodeView */,
 				88EBED681CBCDEFA001EC50F /* Skin */,
@@ -1244,17 +1255,6 @@
 				88EBED511CBCDEFA001EC50F /* SafeDictionary.m */,
 			);
 			path = Foundation;
-			sourceTree = "<group>";
-		};
-		88EBED521CBCDEFA001EC50F /* NetWorkReachability */ = {
-			isa = PBXGroup;
-			children = (
-				88EBED531CBCDEFA001EC50F /* LSReachability.h */,
-				88EBED541CBCDEFA001EC50F /* LSReachability.m */,
-				88EBED551CBCDEFA001EC50F /* NetWorkTool.h */,
-				88EBED561CBCDEFA001EC50F /* NetWorkTool.m */,
-			);
-			path = NetWorkReachability;
 			sourceTree = "<group>";
 		};
 		88EBED571CBCDEFA001EC50F /* Other */ = {
@@ -1782,6 +1782,7 @@
 				88832EF91CC3448A00FD509A /* ioapi.c in Sources */,
 				88EBEE391CBCDEFA001EC50F /* TabBarController.m in Sources */,
 				88EBEDDE1CBCDEFA001EC50F /* NSKeyedUnarchiver+Category.m in Sources */,
+				88950EBA1D0689D6002B193D /* NetWorkTool.m in Sources */,
 				88CEECFD1CBE2E3100FA9B78 /* NetWorkManager.m in Sources */,
 				887DE8631CBF310600834BEC /* LSBigImageShowViewController.m in Sources */,
 				88EBEE281CBCDEFA001EC50F /* ToastUtils.m in Sources */,
@@ -1806,7 +1807,6 @@
 				88832EDE1CC320D000FD509A /* MultiDownloadFile.m in Sources */,
 				887B72021CBCD9270055615C /* LSSecondViewController.m in Sources */,
 				88D454021CBF49FB00E05A5D /* LeftMenuView.m in Sources */,
-				88EBEDFD1CBCDEFA001EC50F /* NetWorkTool.m in Sources */,
 				88A403191CC0970D00B6A5F1 /* ChineseToPinyin.m in Sources */,
 				884ABFA41CC125C200A0821F /* ProgressTest.m in Sources */,
 				88925AF31CC5BEEF0016D778 /* PopMenuViewTableViewDataSource.m in Sources */,
@@ -1840,6 +1840,7 @@
 				88EBEDFE1CBCDEFA001EC50F /* SizeTool.m in Sources */,
 				88EBEE2E1CBCDEFA001EC50F /* ZLPhotoBrowser.m in Sources */,
 				88EBEE081CBCDEFA001EC50F /* AudioTool.m in Sources */,
+				88950EB91D0689D6002B193D /* LSReachability.m in Sources */,
 				88EBEE001CBCDEFA001EC50F /* YYWeakProxy.m in Sources */,
 				88EBEE0C1CBCDEFA001EC50F /* LSBarButtonItem.m in Sources */,
 				88EBEDF11CBCDEFA001EC50F /* AlbumCameraTool.m in Sources */,
@@ -1860,7 +1861,6 @@
 				88832EDD1CC320D000FD509A /* CopyFile.m in Sources */,
 				88912A561CDC4D2C0003D958 /* UIActionSheet+Block.m in Sources */,
 				88925AF11CC5BEEF0016D778 /* PopMenuView.m in Sources */,
-				88EBEDFC1CBCDEFA001EC50F /* LSReachability.m in Sources */,
 				88832EFD1CC3448A00FD509A /* SSZipArchive.m in Sources */,
 				88EBEDFA1CBCDEFA001EC50F /* SafeArray.m in Sources */,
 				88EBEE321CBCDEFA001EC50F /* ZLThumbnailViewController.m in Sources */,

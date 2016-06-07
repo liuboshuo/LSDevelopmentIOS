@@ -104,6 +104,6 @@
 -(void)layoutSubviews
 {
     [super layoutSubviews];
-    
+    [self setCountString:self.countString];
 }
 @end

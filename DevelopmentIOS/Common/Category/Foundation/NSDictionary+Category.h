@@ -70,7 +70,7 @@
  *
  *  @return <#return value description#>
  */
-- (nullable NSDictionary *)popEntriesForKeys:(NSArray *)keys;
+- (nullable NSDictionary *)popEntriesForKeys:(nullable NSArray *)keys;
 
 
 @end

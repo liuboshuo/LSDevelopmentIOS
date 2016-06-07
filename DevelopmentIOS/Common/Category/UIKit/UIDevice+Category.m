@@ -145,45 +145,6 @@
     return can;
 }
 
-- (NSString *)ipAddressWIFI {
-    NSString *address = nil;
-    struct ifaddrs *addrs = NULL;
-    if (getifaddrs(&addrs) == 0) {
-        struct ifaddrs *addr = addrs;
-        while (addr != NULL) {
-            if (addr->ifa_addr->sa_family == AF_INET) {
-                if ([[NSString stringWithUTF8String:addr->ifa_name] isEqualToString:@"en0"]) {
-                    address = [NSString stringWithUTF8String:
-                               inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
-                    break;
-                }
-            }
-            addr = addr->ifa_next;
-        }
-    }
-    freeifaddrs(addrs);
-    return address;
-}
-
-- (NSString *)ipAddressCell {
-    NSString *address = nil;
-    struct ifaddrs *addrs = NULL;
-    if (getifaddrs(&addrs) == 0) {
-        struct ifaddrs *addr = addrs;
-        while (addr != NULL) {
-            if (addr->ifa_addr->sa_family == AF_INET) {
-                if ([[NSString stringWithUTF8String:addr->ifa_name] isEqualToString:@"pdp_ip0"]) {
-                    address = [NSString stringWithUTF8String:
-                               inet_ntoa(((struct sockaddr_in *)addr->ifa_addr)->sin_addr)];
-                    break;
-                }
-            }
-            addr = addr->ifa_next;
-        }
-    }
-    freeifaddrs(addrs);
-    return address;
-}
 
 - (int64_t)diskSpace {
     NSError *error = nil;

@@ -36,11 +36,13 @@ static const int block_key;
 
 @end
 @implementation UIGestureRecognizer (Category)
--(instancetype)initWithActionBlock:(void (^)(id))block
+
+-(id)initWithActionBlock:(void (^)(id))block
 {
-    if (self = [super init]) {
-        [self addActionBlock:block];
-    }
+    self = [self init];
+    
+    [self addActionBlock:block];
+    
     return self;
 }
 -(void)addActionBlock:(void (^)(id))block
