@@ -12,6 +12,7 @@
  用法:
  圆弧的进度条（中间显示进度文字%0~%100字样）
  LSProgressView *progress = [[LSProgressView alloc] init];
+ progress.progressFont = [UIFont systemFontOfSize:10];
  progress.frame = CGRectMake(10, 100, 100, 100);
  progress.width = 5;
  progress.color  = [UIColor purpleColor];
@@ -31,5 +32,6 @@
 
 @property(nonatomic , strong)UIColor *color;
 
+@property(nonatomic , strong)UIFont *progressFont;
 
 @end

@@ -44,9 +44,15 @@
 -(void)setProcess:(CGFloat )process
 {
     _process = process;
-    
-    self.lab.text = [NSString stringWithFormat:@"%0.2f%%",_process*100];
-    [self setNeedsDisplay];
+    if ([NSThread currentThread] == [NSThread mainThread]) {
+        self.lab.text = [NSString stringWithFormat:@"%0.2f%%",_process*100];
+        [self setNeedsDisplay];
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.lab.text = [NSString stringWithFormat:@"%0.2f%%",_process*100];
+            [self setNeedsDisplay];
+        });
+    }
 }
 
 - (void)drawRect:(CGRect)rect
