@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#define TabBarH 49
 
 @interface CustomTabBarController : UITabBarController
 -(void)hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed;

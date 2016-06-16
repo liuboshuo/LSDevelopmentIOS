@@ -155,17 +155,21 @@
 -(void)hidesBottomBarWhenPushed:(BOOL)hidesBottomBarWhenPushed
 {
     if (!hidesBottomBarWhenPushed) {
-        [UIView animateWithDuration:0.2 animations:^{
-            _tabBarView.x = 0;
-        } completion:^(BOOL finished) {
-            _tabBarView.hidden = hidesBottomBarWhenPushed;
-        }];
+        if (_tabBarView.y < UIScreenHeight) {
+            [UIView animateWithDuration:0.2 animations:^{
+                _tabBarView.y = UIScreenHeight - TabBarH;
+            } completion:^(BOOL finished) {
+                _tabBarView.hidden = hidesBottomBarWhenPushed;
+            }];
+        }
     }else{
-        [UIView animateWithDuration:0.2 animations:^{
-            _tabBarView.x = -self.view.width;
-        } completion:^(BOOL finished) {
-            _tabBarView.hidden = hidesBottomBarWhenPushed;
-        }];
+        if (_tabBarView.y >= UIScreenHeight) {
+            [UIView animateWithDuration:0.2 animations:^{
+                _tabBarView.y = UIScreenHeight;
+            } completion:^(BOOL finished) {
+                _tabBarView.hidden = hidesBottomBarWhenPushed;
+            }];
+        }
     }
 }
 /*
