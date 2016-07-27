@@ -14,19 +14,24 @@
 
 #define globalUIColor Color(240, 50.0, 50.0,1.0)
 
-
 // RGB颜色
 #define Color(r, g, b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:a]
 
 // 随机色
 #define RandomColor LSColor(arc4random_uniform(256), arc4random_uniform(256), arc4random_uniform(256))
 
-// ios7
-#define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
-// ios8
-#define iOS8 ([[UIDevice currentDevice].systemVersion doubleValue] >= 8.0)
-// ios9
-#define iOS9 ([[UIDevice currentDevice].systemVersion doubleValue] >= 9.0)
+
+/** 是否为iOS6 */
+#define iOS6 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 6.0) ? YES : NO)
+
+/** 是否为iOS7 */
+#define iOS7 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0) ? YES : NO)
+
+/** 是否为iOS8 */
+#define iOS8 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 8.0) ? YES : NO)
+
+/** 是否为iOS9 */
+#define iOS9 (([[[UIDevice currentDevice] systemVersion] floatValue] >= 9.0) ? YES : NO)
 
 // 偏好
 #define UserDefaults [NSUserDefaults standardUserDefaults]
