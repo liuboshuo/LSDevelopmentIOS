@@ -18,5 +18,8 @@
 #import "TabBarController.h"
 #import "CommonViewController.h"
 #import "RESideMenu.h"
+#import "BorderView.h"
+#import "BorderLabel.h"
+#import "BorderButton.h"
 
 #endif /* UI_h */
